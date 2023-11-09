@@ -10,7 +10,8 @@ https://ui.dev/amiresponsive?url=https://paste-heroku-link-here
 
 ### Colour Scheme
 
-<!-- Explain choice of colour scheme -->
+The colour scheme of Socialeyes is a mix of contrasting colours which was influenced from the illustration I chose for the homepage. The colours work well together even though they are all completely different colours and this can symbolise the objective of the app, which is to bring different people from different backgrounds together. 
+Also, according to colour psychology orange and blue both symbolise social communication, so these are the two I will carry out throughout the colour theme of the website.
 
 - `#000000` used for primary text.
 
