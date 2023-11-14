@@ -8,6 +8,19 @@ https://ui.dev/amiresponsive?url=https://paste-heroku-link-here
 
 ![screenshot](documentation/mockup.png)
 
+Below you can see the charts I created to visualise the flow of the website and any error messages or actions needed depending on the user interaction. You can see on the charts I have worked out what data needs to be collected or added to the database depending on user interaction and what error messages need to be put in place incase of an unexpected/incorrect response.
+
+<details>
+<summary> Click here to see the flow charts </summary><br>
+
+Data Collection
+- ![screenshot](documentation/database-data-collection.jpg)
+
+Events
+- ![screenshot](documentation/user-authentication.jpg)
+
+</details>
+
 ### Colour Scheme
 
 The colour scheme of Socialeyes is a mix of contrasting colours which was influenced from the illustration I chose for the homepage. The colours work well together even though they are all completely different colours and this can symbolise the objective of the app, which is to bring different people from different backgrounds together. 
@@ -29,20 +42,20 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <summary> Click here to see the Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/home.png)
+- ![screenshot](documentation/wireframes/home.png)
 
 Events
-  - ![screenshot](documentation/wireframes/events.png)
+- ![screenshot](documentation/wireframes/events.png)
 
 Login
-  - ![screenshot](documentation/wireframes/login.png)
+- ![screenshot](documentation/wireframes/login.png)
 
 Sign up
-  - ![screenshot](documentation/wireframes/sign_up.png)
+- ![screenshot](documentation/wireframes/sign_up.png)
 
 Profile
-  - ![screenshot](documentation/wireframes/profile.png)
+- ![screenshot](documentation/wireframes/profile.png)
 
 Add/Edit Event
-  - ![screenshot](documentation/wireframes/add_edit_event.png)
+- ![screenshot](documentation/wireframes/add_edit_event.png)
 </details>
