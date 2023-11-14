@@ -11,8 +11,8 @@ main {
     position: relative;
 }
 
-.hero-heading{
-    width:60%;
+.hero-heading {
+    width: 60%;
     text-align: center;
     margin: 0 auto;
     padding-top: 3.5rem;
@@ -24,16 +24,16 @@ h3 {
 }
 
 .sign-up {
-    margin-right:1rem;
+    margin-right: 1rem;
     padding: 0 2rem 0 2rem;
-    background-color:#17268A;
+    background-color: #17268A;
     margin-top: 1rem;
 }
 
 .login {
     padding: 0 2rem 0 2rem;
-    background-color:#17268A;
-    margin-right:0.7rem;
+    background-color: #17268A;
+    margin-right: 0.7rem;
     margin-top: 1rem;
 }
 
@@ -50,7 +50,7 @@ h3 {
     cursor: pointer;
     animation: myAnim 2s ease-in-out 0s infinite normal forwards;
     margin-top: 2rem;
-    color:grey;
+    color: grey;
 
 }
 
@@ -80,5 +80,47 @@ h3 {
         animation-timing-function: ease-out;
         transform: scale(1);
     }
+}
+
+/* Upcoming events section */
+h4 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#upcoming-events {
+    height: 90vh;
+}
+
+/* Footer */
+footer {
+    background-color: #ffeee1;
+    height: 50px;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 13px;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li i {
+    color: #212529
+}
+
+
+.social-icons li a i {
+    margin: 0 auto;
+}
+
+.social-icons li a i:hover {
+    color:#F96D4D;
 }
 

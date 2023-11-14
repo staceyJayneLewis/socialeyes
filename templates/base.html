@@ -23,8 +23,7 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="{{ url_for('home') }}" class="brand-logo black-text"> Socialeyes </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
-                        class="fas fa-bars"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}" class="black-text">Home</a></li>
                     <li><a href="{{ url_for('get_events') }}" class="black-text">Events</a></li>
@@ -46,7 +45,24 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Footer with links -->
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="facebook link"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="twitter link"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="instagram link"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.googlemail.com/" target="_blank" aria-label="googlemail link"><i
+                        class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </footer>
 
+<!-- Materialize, Jquery & Js script -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js">
