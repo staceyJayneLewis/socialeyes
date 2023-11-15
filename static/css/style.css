@@ -3,6 +3,7 @@
     background-color: #ffeee1 !important;
 }
 
+/* home page */
 /* callout section */
 main {
     width: 100%;
@@ -124,3 +125,12 @@ footer {
     color:#F96D4D;
 }
 
+/* Sign-up Page */
+.page-header{
+    background-color: #ffeee1;
+    height:20vh;
+}
+
+.sign-up-header{
+    padding-top: 2rem;
+}
