@@ -5,7 +5,7 @@
 
 /* home page */
 /* callout section */
-main {
+.callout {
     width: 100%;
     height: 85vh;
     background-color: #ffeee1;
@@ -122,15 +122,15 @@ footer {
 }
 
 .social-icons li a i:hover {
-    color:#F96D4D;
+    color: #F96D4D;
 }
 
 /* Sign-up Page */
-.page-header{
+.page-header {
     background-color: #ffeee1;
-    height:20vh;
+    height: 20vh;
 }
 
-.sign-up-header{
+.sign-up-header {
     padding-top: 2rem;
 }
