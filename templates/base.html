@@ -27,7 +27,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}" class="black-text">Home</a></li>
                     <li><a href="{{ url_for('get_events') }}" class="black-text">Events</a></li>
-                    <li><a href="#" class="black-text">Log in</a></li>
+                    <li><a href="{{ url_for('login') }}" class="black-text">Log in</a></li>
                     <li><a href="{{ url_for('sign_up') }}" class="black-text">Sign up</a></li>
                 </ul>
             </div>
@@ -36,26 +36,22 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}" class="black-text">Home</a></li>
             <li><a href="{{ url_for('get_events') }}" class="black-text">Events</a></li>
-            <li><a href="#" class="black-text">Log in</a></li>
+            <li><a href="{{ url_for('login') }}" class="black-text">Log in</a></li>
             <li><a href="{{ url_for('sign_up') }}" class="black-text">Sign up</a></li>
         </ul>
     </header>
 
-    <section class="container">
+<main>
+    <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <div class="flashes">
-                        <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
-                    </div>
+                        <h6 class="center-align">{{ message }}</h6>
                 {% endfor %}
             {% endif %}
         {% endwith %}
     </section>
-
-
-<main>
     {% block content %}
     {% endblock %}
 </main>

@@ -3,13 +3,13 @@
 {% block content %}
 
 <div class="page-header center-align">
-    <h3 class="sign-up-header">Sign up</h3>
-    <p>Create an account today to add your own events and attend others. Simply create a username and password then
-        click 'Sign up'.</p>
+    <h3 class="sign-up-header">Log in</h3>
+    <p>Log in today to add your own events and attend others. Simply enter your username and password then
+        click 'Log in'.</p>
 </div>
 
 <div class="row">
-    <form class="col s12 m6 offset-m3 mt-6" method="POST" action="{{ url_for('sign_up') }}">
+    <form class="col s12 m6 offset-m3 mt-6" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel">
             <div class="row">
                 <div class="input-field col s12 p-3">
@@ -28,18 +28,10 @@
                     <label for="password">Password</label>
                 </div>
             </div>
-            <div class="row">
-                <div class="input-field col s12 p-3">
-                    <i class="fas fa-user-lock prefix light-blue-text text-darken-4"></i>
-                    <input id="confirm-password" name="confirm-password" type="password" minlength="5" maxlength="15"
-                        pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                    <label for="confirm-password">Confirm Password</label>
-                </div>
-            </div>
-            <!-- register -->
+            <!-- login -->
             <div class="row p-3">
                 <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
-                    Sign Up
+                    Login
                 </button>
             </div>
         </div>
@@ -49,8 +41,8 @@
 <div class="row">
     <div class="col s12 mb-6">
         <p class="center-align">
-            Already signed up?
-            <a href="{{ url_for('sign_up') }}" class="light-blue-text text-darken-4">Log in here!</a>
+            Not signed up yet?
+            <a href="{{ url_for('sign_up') }}" class="light-blue-text text-darken-4">Sign up here!</a>
         </p>
     </div>
 </div>
