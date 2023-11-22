@@ -1,24 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>Events</h2>
+<div class="page-header">
+    <h3>Events</h3>
+    <p>Interested in attending an event? Let them know by clicking the 'I'll be attending' button.</p>
+    <a href="{{ url_for('profile', username=session['user'])}}" class="btn filled icon-right rounded">
+        Go to my events
+    </a>
+</div>
 
+<div class="events row">
     {% for event in events %}
-    <div card="container s12">
-        <div class="col s6">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title"> {{ event.event_name }}</span>
-                    <p>{{ event.event_description }}<br>
-                       {{ event.date }}<br>
-                       {{ event.time }}<br>
-                       {{ event.location }}
-                    </p>
-                </div>
-                <div class="card-action">
-                    <a href="#"><i class="fa-solid fa-thumbs-up"></i> I'll be attending </a>
-                </div>
+    <div class="col s12 m6 m-3">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title"> {{ event.event_name }}</span>
+                <p>{{ event.event_description }}<br>
+                    {{ event.date }}<br>
+                    {{ event.time }}<br>
+                    {{ event.location }}
+                </p>
+                <hr>
+                <a href="#"><i class="fa-solid fa-thumbs-up"></i> I'll be attending </a>
             </div>
+        </div>
+    </div>
     {% endfor %}
+</div>
 
 {% endblock %}
