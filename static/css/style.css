@@ -6,7 +6,7 @@ body{
 
 /* navbar */
 .nav-wrapper {
-    background-color: #ffeee1 !important;
+    background-color: #fed0b8 !important;
 }
 
 /* home page */
@@ -14,7 +14,7 @@ body{
 .callout {
     width: 100%;
     height: 85vh;
-    background-color: #ffeee1;
+    background-color: #fed0b8;
     position: relative;
 }
 
@@ -90,14 +90,14 @@ h3 {
 }
 
 /* Upcoming events section */
-#upcoming-events>h4 {
+#upcoming-events > h4 {
     text-align: center;
     padding-top: 1rem;
 }
 
 /* Footer */
 footer {
-    background-color: #ffeee1;
+    background-color: #fed0b8;
     height: 50px;
     margin-top:auto;
 }
@@ -130,8 +130,10 @@ footer {
 
 /* Sign-up Page */
 .page-header {
-    background-color: #ffeee1;
-    height: 20vh;
+    background-color: #fed0b8
+    height: 30vh;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .sign-up-header {
@@ -141,7 +143,7 @@ footer {
 /* Profile */
 .profile-header {
     height: 35vh;
-    background-color: #ffeee1;
+    background-color: #fed0b8;
     padding-top: 2rem;
 }
 
