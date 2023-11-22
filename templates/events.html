@@ -2,13 +2,23 @@
 {% block content %}
 
     <h2>Events</h2>
+
     {% for event in events %}
-        {{ event.event_name }}<br>
-        {{ event.date }}<br>
-        {{ event.time }}<br>
-        {{ event.is_due }}<br>
-        {{ event.location }}<br>
-        {{ event.event_description }}<br>
+    <div card="container s12">
+        <div class="col s6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"> {{ event.event_name }}</span>
+                    <p>{{ event.event_description }}<br>
+                       {{ event.date }}<br>
+                       {{ event.time }}<br>
+                       {{ event.location }}
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#"><i class="fa-solid fa-thumbs-up"></i> I'll be attending </a>
+                </div>
+            </div>
     {% endfor %}
 
 {% endblock %}
