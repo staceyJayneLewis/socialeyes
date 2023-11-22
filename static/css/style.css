@@ -1,3 +1,9 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* navbar */
 .nav-wrapper {
     background-color: #ffeee1 !important;
@@ -89,14 +95,11 @@ h3 {
     padding-top: 1rem;
 }
 
-#upcoming-events {
-    height: 90vh;
-}
-
 /* Footer */
 footer {
     background-color: #ffeee1;
     height: 50px;
+    margin-top:auto;
 }
 
 .social-icons {
@@ -142,7 +145,7 @@ footer {
     padding-top: 2rem;
 }
 
-.card {
+.profile-header > .card {
     width: 40%;
     height: 70%;
     background-color: white;
@@ -154,8 +157,4 @@ footer {
     float: left;
     margin-right: 2rem;
     object-fit: fill;
-}
-
-.profile-body {
-    height: 90vh;
 }
