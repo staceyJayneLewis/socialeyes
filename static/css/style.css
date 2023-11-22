@@ -136,26 +136,26 @@ footer {
 }
 
 /* Profile */
-.profile-header{
-    height:35vh;
-    background-color:#ffeee1;
-    padding-top:2rem;
+.profile-header {
+    height: 35vh;
+    background-color: #ffeee1;
+    padding-top: 2rem;
 }
 
-.card{
-    width:40%;
-    height:70%;
-    background-color:white;
+.card {
+    width: 40%;
+    height: 70%;
+    background-color: white;
     margin: 0 auto;
 }
 
-.card-image{
-    width:200px;
-    float:left;
+.card-image {
+    width: 200px;
+    float: left;
     margin-right: 2rem;
     object-fit: fill;
 }
 
-.profile-body{
+.profile-body {
     height: 90vh;
 }
