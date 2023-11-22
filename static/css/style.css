@@ -6,7 +6,7 @@ body{
 
 /* navbar */
 .nav-wrapper {
-    background-color: #fed0b8 !important;
+    background-color: #ffdfdb !important;
 }
 
 /* home page */
@@ -14,7 +14,7 @@ body{
 .callout {
     width: 100%;
     height: 85vh;
-    background-color: #fed0b8;
+    background-color: #ffdfdb;
     position: relative;
 }
 
@@ -97,7 +97,7 @@ h3 {
 
 /* Footer */
 footer {
-    background-color: #fed0b8;
+    background-color: #ffdfdb;
     height: 50px;
     margin-top:auto;
 }
@@ -130,7 +130,7 @@ footer {
 
 /* Sign-up Page */
 .page-header {
-    background-color: #fed0b8
+    background-color: #ffdfdb;
     height: 30vh;
     text-align: center;
     padding: 20px 0;
@@ -143,7 +143,7 @@ footer {
 /* Profile */
 .profile-header {
     height: 35vh;
-    background-color: #fed0b8;
+    background-color: #ffdfdb;
     padding-top: 2rem;
 }
 
