@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <h3 class="light-blue-text text-darken-4 center-align mt-5">Add Event</h3>
+
+    <div class="row mt-6">
+        <form class="col s12" method="POST" action="">
+            <div class="row add_event_input">
+                <div class="input-field col s12">
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Event Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Event Description</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="prefix fa-regular fa-calendar fa-lg"></i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Date</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="prefix fa-regular fa-clock fa-lg"></i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Time</label>
+                </div>
+                <div class="input-field col s6 ml-6">
+                    <i class="prefix fa-solid fa-location-dot fa-lg"></i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Location</label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

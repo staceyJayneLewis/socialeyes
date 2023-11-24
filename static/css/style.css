@@ -160,3 +160,8 @@ footer {
     margin-right: 2rem;
     object-fit: fill;
 }
+
+/* Add Event */
+label {
+    font-size: 1.5rem!important;
+}
