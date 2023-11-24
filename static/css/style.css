@@ -165,3 +165,9 @@ footer {
 label {
     font-size: 1.5rem!important;
 }
+
+.input-field{
+    margin-left:5px;
+    margin-right: 5px;
+    padding: 10px;
+}
