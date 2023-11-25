@@ -120,6 +120,13 @@ def add_event():
         return redirect(url_for("get_events"))
         
     return render_template("add_event.html")
+    
+
+@app.route("/edit_event/<event_id>", methods=["GET", "POST"])
+def edit_event(event_id):
+    event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
+    return render_template("edit_event.html", event=event)
+    
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
