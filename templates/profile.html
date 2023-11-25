@@ -28,6 +28,8 @@
                     {{ event.event_location }}
                 </p>
                 <hr>
+                <a href="{{ url_for('edit_event'), event=event }}" class="btn-small light-blue lighten-1">Edit</a>
+                <a href="#" class="btn-small green accent-4">Done</a>
                 <a href="{{ url_for('edit_event', event_id=event._id) }}" class="btn-small light-blue lighten-1">Edit</a>
                 <a href="#" class="btn-small green accent-4">Done</a>
             </div>
