@@ -83,12 +83,15 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    
+    # get users events from database
+    events = list(mongo.db.events.find())
     # get the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
     if session["user"]:        
-        return render_template("profile.html", username=username)
+        return render_template("profile.html", username=username, events=events)
 
     return redirect(url_for('login'))
 
@@ -101,8 +104,21 @@ def logout():
     return redirect(url_for('login'))
 
 
-@app.route("/add_event")
+@app.route("/add_event", methods=["GET", "POST"])
 def add_event():
+    if request.method == "POST":
+        event = {
+            "event_name": request.form.get("event_name"),
+            "event_description": request.form.get("event_description"),
+            "event_date": request.form.get("event_date"),
+            "event_time": request.form.get("event_time"),
+            "event_location": request.form.get("event_location"),
+            "created_by": session["user"],
+        }
+        mongo.db.events.insert_one(event)
+        flash("Event added sucessfully!")
+        return redirect(url_for("get_events"))
+        
     return render_template("add_event.html")
 
 if __name__ == "__main__":
