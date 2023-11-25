@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <h3 class="text-darken-4 center-align mt-5">Edit event</h3>
+
+    <!-- Add event form -->
+    <div class="row mt-6 card-panel">
+        <form class="col s12" method="POST" action="{{ url_for('edit_event', event_id=event._id) }}">
+            <div class="row">
+                <!-- event name -->
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <input id="event_name" type="text" class="validate" name="event_name" required>
+                    <label for="event_name">Event Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <!-- event description -->
+                <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix"></i>
+                    <textarea id="event_description" name="event_description" minlength="5" maxlength="200"
+                        class="materialize-textarea validate" required></textarea>
+                    <label for="event_description">Event Description</label>
+                </div>
+            </div>
+            <div class="row">
+                <!-- event date -->
+                <div class="input-field col s12">
+                    <i class="prefix fa-regular fa-calendar fa-lg"></i>
+                    <input id="event_date" type="text" class="datepicker" name="event_date" required>
+                    <label for="event_date">Date</label>
+                </div>
+            </div>
+            <div class="row">
+                <!-- event time -->
+                <div class="input-field col s6">
+                    <i class="prefix fa-regular fa-clock fa-lg"></i>
+                    <input id="event_time" type="tel" class="validate" name="event_time" required>
+                    <label for="event_time">Time</label>
+                </div>
+                <!--event location -->
+                <div class="input-field col s6">
+                    <i class="prefix fa-solid fa-location-dot fa-lg"></i>
+                    <input id="event_location" type="tel" class="validate" name="event_location" required>
+                    <label for="event_location">Location</label>
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large elevated mt-5"><i
+                        class="fa-solid fa-pen-to-square fa-xs"></i>Edit</button>
+            </div>
+    </div>
+    </form>
+</div>
+
+
+{% endblock %}
