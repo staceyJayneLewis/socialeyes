@@ -120,10 +120,24 @@ def add_event():
         return redirect(url_for("get_events"))
         
     return render_template("add_event.html")
-    
+
 
 @app.route("/edit_event/<event_id>", methods=["GET", "POST"])
 def edit_event(event_id):
+    if request.method == "POST":
+        edit = {
+            "event_name": request.form.get("event_name"),
+            "event_description": request.form.get("event_description"),
+            "event_date": request.form.get("event_date"),
+            "event_time": request.form.get("event_time"),
+            "event_location": request.form.get("event_location"),
+            "created_by": session["user"],
+        }
+
+        mongo.db.events.update_one({"_id": ObjectId(event_id)},{"$set":edit})
+        flash("Event updated sucessfully!")
+        return redirect(url_for("profile", username=session["user"]))
+
     event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
     return render_template("edit_event.html", event=event)
     
