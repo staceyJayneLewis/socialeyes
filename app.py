@@ -140,7 +140,13 @@ def edit_event(event_id):
 
     event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
     return render_template("edit_event.html", event=event)
-    
+
+
+@app.route("/delete_event/<event_id>")
+def delete_event(event_id):
+     mongo.db.events.delete_one({"_id": ObjectId(event_id)})
+     flash("Event deleted succesfully!")
+     return redirect( url_for("profile", username=session['user']))
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
