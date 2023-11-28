@@ -1,4 +1,4 @@
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,8 +18,8 @@ body{
     position: relative;
 }
 
-.hero-heading {
-    width: 60%;
+#hero-heading {
+    width: 80%;
     text-align: center;
     margin: 0 auto;
     padding-top: 3.5rem;
@@ -90,7 +90,7 @@ h3 {
 }
 
 /* Upcoming events section */
-#upcoming-events > h4 {
+#upcoming-events>h4 {
     text-align: center;
     padding-top: 1rem;
 }
@@ -99,7 +99,7 @@ h3 {
 footer {
     background-color: #ffdfdb;
     height: 50px;
-    margin-top:auto;
+    margin-top: auto;
 }
 
 .social-icons {
@@ -147,7 +147,7 @@ footer {
     padding-top: 2rem;
 }
 
-.profile-header > .card {
+.profile-header>.card {
     width: 40%;
     height: 70%;
     background-color: white;
@@ -163,11 +163,21 @@ footer {
 
 /* Add Event */
 label {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
 }
 
-.input-field{
-    margin-left:5px;
+.input-field {
+    margin-left: 5px;
     margin-right: 5px;
     padding: 10px;
+}
+
+/* medium screens */
+@media only screen and (min-width: 600px) {}
+
+/* large screens */
+@media only screen and (min-width: 992px) {
+    #hero-heading{
+        width: 60%;
+    }
 }
