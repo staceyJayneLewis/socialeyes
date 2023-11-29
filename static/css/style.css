@@ -4,6 +4,24 @@ body {
     flex-direction: column;
 }
 
+.page-header {
+    background-color: #ffdfdb;
+    height: 30vh;
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+}
+
+/* code used from w3schools as referenced in README.md sources */
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
 /* navbar */
 .nav-wrapper {
     background-color: #ffdfdb !important;
@@ -21,9 +39,17 @@ body {
 #hero-heading {
     width: 80%;
     text-align: center;
-    margin: 0 auto;
-    padding-top: 3.5rem;
 }
+
+.hero-center {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
 
 h3 {
     margin: 0;
@@ -129,13 +155,6 @@ footer {
 }
 
 /* Sign-up Page */
-.page-header {
-    background-color: #ffdfdb;
-    height: 30vh;
-    text-align: center;
-    padding: 20px 0;
-}
-
 .sign-up-header {
     padding-top: 2rem;
 }
@@ -161,6 +180,11 @@ footer {
     object-fit: fill;
 }
 
+/* Events */
+.card-content > p{
+    font-size: 16px;
+}
+
 /* Add Event */
 label {
     font-size: 1.5rem !important;
@@ -173,11 +197,24 @@ label {
 }
 
 /* medium screens */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .page-header > p{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .hero-center{
+        top: 30%;
+    }
+}
 
 /* large screens */
 @media only screen and (min-width: 992px) {
     #hero-heading{
         width: 60%;
+    }
+
+    .hero-center{
+        top: 30%;
     }
 }
