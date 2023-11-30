@@ -1,4 +1,5 @@
 import os
+from functools import wraps
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -17,6 +18,21 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
+# @login_required decorator
+# https://flask.palletsprojects.com/en/2.0.x/patterns/viewdecorators/#login-required-decorator
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        # no "user" in session
+        if "user" not in session:
+            flash("You must log in to view this page")
+            return redirect(url_for("login"))
+        # user is in session
+        return f(*args, **kwargs)
+    return decorated_function
+
+
 @app.route("/")
 @app.route("/home")
 def home():
@@ -25,6 +41,7 @@ def home():
 
 
 @app.route("/get_events")
+@login_required
 def get_events():
     events = list(mongo.db.events.find())
     return render_template("events.html", events=events)
@@ -39,6 +56,10 @@ def sign_up():
 
         if existing_user:
             flash("Username already exists, please try a different one.")
+            return redirect(url_for("sign_up"))
+
+        if request.form.get("password") != request.form.get("confirm-password"):
+            flash("Passwords do not match, please try again!")
             return redirect(url_for("sign_up"))
 
         signUp = {
@@ -82,8 +103,8 @@ def login():
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
+@login_required
 def profile(username):
-    
     # get users events from database
     events = list(mongo.db.events.find())
     # get the session user's username from db
@@ -97,6 +118,7 @@ def profile(username):
 
 
 @app.route("/logout")
+@login_required
 def logout():
     # log user out and remove session cookie
     flash("Logged out!")
@@ -105,7 +127,9 @@ def logout():
 
 
 @app.route("/add_event", methods=["GET", "POST"])
+@login_required
 def add_event():
+
     if request.method == "POST":
         event = {
             "event_name": request.form.get("event_name"),
@@ -123,7 +147,13 @@ def add_event():
 
 
 @app.route("/edit_event/<event_id>", methods=["GET", "POST"])
+@login_required
 def edit_event(event_id):
+    event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
+    if event["created_by"] != session["user"]:
+        flash("Access denied!")
+        return redirect(url_for("profile", username=session["user"]))
+
     if request.method == "POST":
         edit = {
             "event_name": request.form.get("event_name"),
@@ -138,17 +168,23 @@ def edit_event(event_id):
         flash("Event updated sucessfully!")
         return redirect(url_for("profile", username=session["user"]))
 
-    event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
     return render_template("edit_event.html", event=event)
 
 
 @app.route("/delete_event/<event_id>")
+@login_required
 def delete_event(event_id):
-     mongo.db.events.delete_one({"_id": ObjectId(event_id)})
-     flash("Event deleted succesfully!")
-     return redirect( url_for("profile", username=session['user']))
+    event = mongo.db.events.find_one({"_id": ObjectId(event_id)})
+    if event["created_by"] != session["user"]:
+        flash("Access denied!")
+        return redirect(url_for("profile", username=session["user"]))
+
+    mongo.db.events.delete_one({"_id": ObjectId(event_id)})
+    flash("Event deleted succesfully!")
+    return redirect( url_for("profile", username=session['user']))
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=os.environ.get("DEBUG", False))
