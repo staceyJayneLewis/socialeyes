@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="container">
+<div class="container center">
     <h3 class="text-darken-4 center-align mt-5">Edit event</h3>
-
     <!-- Add event form -->
     <div class="row mt-6 card-panel">
         <form class="col s12" method="POST" action="{{ url_for('edit_event', event_id=event._id) }}">
@@ -47,7 +46,7 @@
                 <!--event location -->
                 <div class="input-field col s6">
                     <i class="prefix fa-solid fa-location-dot fa-lg"></i>
-                    <input id="event_location" type="tel" value="{{ event.event_location }}" class="validate"
+                    <input id="event_location" type="tel" value="{{- event.event_location }}" class="validate"
                         name="event_location" required>
                     <label for="event_location">Location</label>
                 </div>
