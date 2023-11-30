@@ -39,14 +39,14 @@
                 <!-- event time -->
                 <div class="input-field col s6">
                     <i class="prefix fa-regular fa-clock fa-lg"></i>
-                    <input id="event_time" type="tel" value="{{ event.event_time }}" class="validate" name="event_time"
+                    <input id="event_time" type="text" value="{{ event.event_time }}" class="validate timepicker" name="event_time"
                         required>
                     <label for="event_time">Time</label>
                 </div>
                 <!--event location -->
                 <div class="input-field col s6">
                     <i class="prefix fa-solid fa-location-dot fa-lg"></i>
-                    <input id="event_location" type="tel" value="{{- event.event_location }}" class="validate"
+                    <input id="event_location" type="text" value="{{- event.event_location }}" class="validate"
                         name="event_location" required>
                     <label for="event_location">Location</label>
                 </div>
