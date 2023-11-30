@@ -2,16 +2,16 @@
 {% block content %}
 
 <!-- Callout -->
-<main class="callout">
+<section class="callout">
     <div id="hero-heading" class="hero-center">
         <h3>Open your eyes to Socialeyes</h3>
         <p>Our vision is to give people a platform to help them find/promote events that encourage people of all ages to
             socialize face to face through their interests to help charities, mental health and loneliness.
         </p>
-        <a href="{{ url_for('sign_up')}}" class="sign-up btn filled icon-right rounded">
+        <a href="{{ url_for('sign_up')}}" class="sign-up btn filled">
             Sign Up
         </a>
-        <a href="{{ url_for('login') }}" class="login btn filled icon-right rounded">
+        <a href="{{ url_for('login') }}" class="login btn filled">
             Log in
         </a><br>
         <a href="#upcoming-events" aria-label="link to destination results page section"><i
@@ -19,7 +19,7 @@
     </div>
     <!-- hero image -->
     <img src="/static/images/hero-image.png" class="hero-image responsive-img" alt="people socialising illustration">
-</main>
+</section>
 
 <!-- Upcoming events -->
 <section id="upcoming-events">
