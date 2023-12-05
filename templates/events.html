@@ -4,9 +4,8 @@
 <div class="page-header">
     <h3>Events</h3>
     <p>Interested in attending an event? Let them know by clicking the 'I'll be attending' button.</p>
-    <a href="{{ url_for('profile', username=session['user'])}}" class="btn filled icon-right rounded">
-        Go to saved events
-    </a>
+    <a href="{{ url_for('profile', username=session['user'])}}" class="btn rounded ">Go to saved
+        events</a>
 </div>
 
 <div class="events row">
@@ -14,13 +13,13 @@
     <div class="col s12 m6 l4 m-4">
         <div class="card">
             <div class="card-content">
-                <span class="card-title"> {{ event.event_name }} </span>
+                <span class="card-title"><strong> {{ event.event_name }} </strong></span>
                 <p>{{ event.event_description }}<br>
                     {{ event.event_date }}<br>
                     {{ event.event_time }}<br>
                     {{ event.event_location }}
                 </p>
-                <hr>
+                <br>
                 {% if session.user|lower == event.created_by|lower %}
                 <a href="{{ url_for('edit_event', event_id=event._id) }}" class="btn-small light-blue lighten-1">Edit</a>
                 <a href="{{ url_for('delete_event', event_id=event._id) }}" class="btn-small red accent-4"
