@@ -8,7 +8,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css"
+        href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-beta/dist/css/materialize.min.css"
         type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
@@ -24,7 +24,7 @@
             <div class="nav-wrapper">
                 <a href="{{ url_for('home') }}" class="brand-logo black-text"> Socialeyes </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="right hide-on-med-and-down nav-right">
                     <li><a href="{{ url_for('home') }}" class="black-text">Home</a></li>
                     {% if session["user"] %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}" class="black-text">Profile</a></li>
@@ -88,7 +88,7 @@
     <!-- Materialize, Jquery & Js script -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-beta/dist/js/materialize.min.js">
     </script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
