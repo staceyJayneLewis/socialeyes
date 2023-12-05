@@ -1,10 +1,10 @@
-# [SOCIALEYES](https://socialeyes-1884ceb59a89.herokuapp.com/)
+# [SOCIALEYES](https://socialeyes-1884ceb59a89.herokuapp.com)
 
-The aim of the Socialeyes website is to promote events that encourage people of all ages to socialize face to face through their preferred interests or charities to help improve mental health and conquer loneliness. Users will have the ability to register and search for events, view upcoming events and 'like' events they are interested in.
+The aim of Socialeyes is to promote events that encourage people of all ages to socialize face to face through their interests/hobbies or charities to help improve mental health and conquer loneliness. Users will have the ability to view upcoming events and 'like' events they are interested in and even add their own event. 
 
 The second aim is to give fundraising events/charities a platform where they can share any events or needs that could help them out for users who may have a little spare time. The event coordinators will have the ability to add, update and delete events, whilst also having the ability to see how many users are 'interested' in the event. 
 
-https://ui.dev/amiresponsive?url=https://socialeyes-1884ceb59a89.herokuapp.com/
+https://ui.dev/amiresponsive?url=https://socialeyes-1884ceb59a89.herokuapp.com
 
 <!-- ![screenshot](documentation/mockup.png) -->
 
@@ -21,10 +21,14 @@ Events
 
 </details>
 
+
 ## UX
 
-<!-- In this section, you will briefly explain your design processes. -->
+🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
+In this section, you will briefly explain your design processes.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Colour Scheme
 
@@ -32,25 +36,23 @@ The colour scheme of Socialeyes is a mix of contrasting colours which was influe
 Also, according to colour psychology orange and blue both symbolise social communication, so these are the two I will carry out throughout the colour theme of the website.
 
 - `#000000` used for primary text.
+- `#FFFFFF` used for primary highlights.
+- `#17268a` used for secondary highlights.
 
-I used [coolors.co](https://coolors.co/020644-fa5e2e-ffb540-f4c0b4-0aafa4) to generate my colour palette which was also influnced by the illustration colours.
+I used [coolors.co](https://coolors.co/ffdfdb-f96d4d-17268a-ffb740-000000) to generate my colour palette which was also influnced by the illustration colours.
 
 ![screenshot](documentation/coolors.jpg)
 
 
 ### Typography
 
+I have used Google fonts to help with the styles of the fonts used in the website.
 
-<!-- Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
+- [Comfortaa](https://fonts.google.com/specimen/Comfortaa) was used for the primary headers and titles.
 
-Example:
+- [Poppins](https://fonts.google.com/specimen/Poppins) was used for all other secondary text.
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer. -->
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
 
@@ -70,6 +72,13 @@ Example:
 - As a returning site user, I would like to ____________, so that I can ____________.
 - As a returning site user, I would like to ____________, so that I can ____________.
 
+### Site Admin
+
+- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to ____________, so that I can ____________.
 
 ## Wireframes
 
@@ -98,9 +107,12 @@ Add/Edit Event
 - ![screenshot](documentation/wireframes/add_edit_event.png)
 </details>
 
+
 ## Features
 
-<!-- In this section, you should go over the different parts of your project,
+🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+In this section, you should go over the different parts of your project,
 and describe each in a sentence or so.
 
 You will need to explain what value each of the features provides for the user,
@@ -108,43 +120,56 @@ focusing on who this website is for, what it is that they want to achieve,
 and how your project is the best way to help them achieve these things.
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
-Remember to always include a screenshot of each individual feature! -->
+
+IMPORTANT: Remember to always include a screenshot of each individual feature!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Existing Features
 
 - **Title for feature #1**
 
-    <!-- - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature01.png) -->
+![screenshot](documentation/feature01.png)
 
 - **Title for feature #2**
 
-    <!-- - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature02.png) -->
+![screenshot](documentation/feature02.png)
 
 - **Title for feature #3**
 
-    <!-- - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png) -->
+![screenshot](documentation/feature03.png)
 
+🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+Repeat as necessary for as many features as your site contains.
+
+Hint: the more, the merrier!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Future Features
 
-<!-- Do you have additional ideas that you'd like to include on your project in the future?
+🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+Do you have additional ideas that you'd like to include on your project in the future?
 Fantastic! List them here!
 It's always great to have plans for future improvements!
 Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
 
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - Title for future feature #1
     - Any additional notes about this feature.
 - Title for future feature #2
     - Any additional notes about this feature.
 - Title for future feature #3
-    - Any additional notes about this feature. -->
+    - Any additional notes about this feature.
 
 ## Tools & Technologies Used
 
@@ -154,13 +179,36 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
 - [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+
+## Database Design
+
+My project uses a non-relational database with MongoDB, and therefore the database architecture
+doesn't have actual relationships like a relational database would.
+
+My database is called **socialeyes**.
+
+It contains 2 collections:
+
+- **events**
+    | Key | Type | Notes |
+    | --- | --- | --- |
+    | _id | ObjectId() | |
+    | event_name | String | |
+    | event_description | String | |
+    | due_date | String | |
+    | created_by | String | selected from the *users* collection |
+
+- **users**
+    | Key | Type | Notes |
+    | --- | --- | --- |
+    | _id | ObjectId() | |
+    | username | String | |
+    | password | String | uses Secure Hash Algorithm (SHA) |
 
 ## Testing
 
@@ -168,17 +216,176 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-The site was deployed to GitHub Pages. The steps to deploy are as follows:
+The live deployed application can be found deployed on [Heroku](https://socialeyes-1884ceb59a89.herokuapp.com).
 
-- In the [GitHub repository](https://github.com/staceyJayneLewis/socialeyes), navigate to the Settings tab 
-- From the source section drop-down menu, select the **Main** Branch, then click "Save".
-- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://staceyjaynelewis.github.io/socialeyes)
+### MongoDB Non-Relational Database
+
+This project uses [MongoDB](https://www.mongodb.com) for the Non-Relational Database.
+
+To obtain your own MongoDB Database URI, sign-up on their site, then follow these steps:
+
+- The name of the database on MongoDB should be called **insert-your-database-name-here**.
+- The collection(s) needed for this database should be **insert-your-collection-names-here**.
+- Click on the **Cluster** name created for the project.
+- Click on the **Connect** button.
+- Click **Connect Your Application**.
+- Copy the connection string, and replace `password` with your own password (also remove the angle-brackets).
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
+- From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
+
+| Key | Value |
+| --- | --- |
+| `DATABASE_URL` | user's own value |
+| `IP` | 0.0.0.0 |
+| `MONGO_DBNAME` | user's own value |
+| `MONGO_URI` | user's own value |
+| `PORT` | 5000 |
+| `SECRET_KEY` | user's own value |
+
+Heroku needs two additional files in order to deploy properly.
+
+- requirements.txt
+- Procfile
+
+You can install this project's **requirements** (where applicable) using:
+
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+
+- `pip3 freeze --local > requirements.txt`
+
+The **Procfile** can be created with the following command:
+
+- `echo web: python app.py > Procfile`
+- *replace **app.py** with the name of your primary Flask app name; the one at the root-level*
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
 
 ### Local Deployment
 
 This project can be cloned or forked in order to make a local copy on your own system.
+
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+
+- `pip3 install -r requirements.txt`.
+
+If you are using SQLAlchemy for your project, you need to create a local PostgreSQL database.
+In this example, the example database name is **db-name**.
+
+```shell
+workspace (branch) $ set_pg
+workspace (branch) $ psql
+
+... connection to postgres ...
+
+postgres=# CREATE DATABASE db-name;
+CREATE DATABASE
+postgres=# \c db-name;
+You are now connected to database "db-name" as user "foobar".
+db-name=# \q
+```
+
+Once that database is created, you must migrate the database changes from your models.py file.
+This example uses **app-name** for the name of the primary Flask application.
+
+```shell
+workspace (branch) $ python3
+
+... connection to Python CLI ...
+
+>>> from app-name import db
+>>> db.create_all()
+>>> exit()
+```
+
+To confirm that the database table(s) have been created, you can use the following:
+
+```shell
+workspace (branch) $ psql -d db-name
+
+... connection to postgres ...
+
+postgres=# \dt
+
+	List of relations
+Schema | Name | Type | Owner
+-------+------+------+--------
+public | blah1 | table | foobar
+public | blah2 | table | foobar
+public | blah3 | table | foobar
+
+db-name=# \q
+```
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps, plus a few extras.
+
+Sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("MONGO_DBNAME", "user's own value")
+os.environ.setdefault("MONGO_URI", "user's own value")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "user's own value")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DB_URL", "user's own value")
+os.environ.setdefault("DEBUG", "True")
+os.environ.setdefault("DEVELOPMENT", "True")
+```
+
+If using Flask-Migrate, make sure to include the following steps as well.
+
+During the course of development, it became necessary to update the PostgreSQL data models.
+In order to do this, [Flask-Migrate](https://flask-migrate.readthedocs.io) was used.
+
+- `pip3 install Flask-Migrate`
+- Import the newly installed package on your main `__init__.py` file:
+	- `from flask_migrate import Migrate`
+- Define **Migrate** in the same file after **app** and **db** are defined:
+	- `migrate = Migrate(app, db)`
+- Initiate the migration changes in the terminal:
+
+```shell
+workspace (branch) $ flask db init
+
+	... generating migrations ...
+
+workspace (branch) $ set_pg
+workspace (branch) $ flask db migrate -m "Add a commit message for this migration"
+
+	... migrating changes ...
+
+workspace (branch) $ flask db upgrade
+
+	... updating database ...
+```
 
 #### Cloning
 
@@ -187,7 +394,7 @@ You can clone the repository by following these steps:
 1. Go to the [GitHub repository](https://github.com/staceyJayneLewis/socialeyes) 
 2. Locate the Code button above the list of files and click it 
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash or Terminal
+4. Open Git shell or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
 	- `git clone https://github.com/staceyJayneLewis/socialeyes.git`
@@ -211,11 +418,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on GitHub Pages.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+<!-- Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku. -->
 
 ## Credits
 
@@ -234,9 +437,11 @@ Use this space to discuss any differences between the local version you've devel
 | [iStock](https://www.istockphoto.com) | Home page | hero image | hero image background (purchased the image as it was not free) |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
-### Acknowledgements
 
+### Acknowledgements
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner William and my daughter Maeva, for believing in me, and allowing me to share my time to learn coding and make this transition into software development.
+
+
