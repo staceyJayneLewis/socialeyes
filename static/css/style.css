@@ -24,7 +24,7 @@ nav ul li :hover {
 /* home page */
 .callout {
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     background-color: #ffdfdb;
     position: relative;
 }
@@ -57,8 +57,7 @@ h3 {
     font-family: 'Comfortaa', Calibri;
 }
 
-.sign-up,
-.login {
+.btn {
     margin-right: 1rem;
     padding: 0 2rem 0 2rem;
     background-color: #17268A;
@@ -181,15 +180,16 @@ footer {
     color: #ffffff;
 }
 
-.button-container>button:hover {
-    background-color: lightgray;
-    color: #000000;
-}
-
 
 /* Sign-up Page */
 .sign-up-header {
     padding-top: 2rem;
+}
+
+.sign_up_link,
+.login_link
+    {
+    color: #17268A !important;
 }
 
 /* Profile */
@@ -224,6 +224,7 @@ label {
     font-size: 1.5rem !important;
 }
 
+/* timepicker */
 input.timepicker-input-hours.text-primary,
 .timepicker-text-container input[type=text],
 input[type=text].timepicker-input-minutes {
@@ -245,6 +246,10 @@ input[type=text].timepicker-input-minutes {
     padding: 10px;
 }
 
+label {
+    font-size: 1.3rem !important;
+}
+
 /* medium screens */
 @media only screen and (min-width: 600px) {
     .page-header>p {
@@ -252,7 +257,7 @@ input[type=text].timepicker-input-minutes {
         padding-left: 5rem;
     }
 
-    .hero-center {
+    #hero-heading {
         top: 30%;
     }
 

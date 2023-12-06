@@ -55,11 +55,11 @@
 
             <!-- submit button -->
             <div class="col s12 center-align mt-5">
-                <a href="{{ url_for('profile', username=session['user'])}}"
-                    class="btn red darken-4 rounded text-shadow mr-2">Cancel</a>
                 <button type="submit" class="btn rounded text-shadow ml-2">
                     Done
                 </button>
+                <a href="{{ url_for('profile', username=session['user'])}}"
+                    class="btn-cancel rounded text-shadow mr-2"><strong>Cancel</strong></a>
             </div>
     </div>
     </form>
