@@ -10,7 +10,7 @@
                 <!-- event name -->
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
-                    <input id="event_name" type="text" class="validate" name="event_name" required>
+                    <input id="event_name" type="text" class="validate" name="event_name" placeholder=" " required>
                     <label for="event_name">Event Name</label>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix"></i>
                     <textarea id="event_description" name="event_description" minlength="5" maxlength="200"
-                        class="materialize-textarea validate" required></textarea>
+                        class="materialize-textarea validate" placeholder=" " required></textarea>
                     <label for="event_description">Event Description</label>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <!-- event date -->
                 <div class="input-field col s12">
                     <i class="prefix fa-regular fa-calendar fa-lg"></i>
-                    <input id="event_date" type="text" class="datepicker" name="event_date" required>
+                    <input id="event_date" type="text" class="datepicker" name="event_date" placeholder=" " required>
                     <label for="event_date">Date</label>
                 </div>
             </div>
@@ -35,23 +35,26 @@
                 <!-- event time -->
                 <div class="input-field col s6">
                     <i class="prefix fa-regular fa-clock fa-lg"></i>
-                    <input id="event_time" type="text" class="validate timepicker" name="event_time" required>
+                    <input id="event_time" type="text" class="validate timepicker" name="event_time" placeholder=" "
+                        required>
                     <label for="event_time">Time</label>
                 </div>
                 <!--event location -->
                 <div class="input-field col s6">
                     <i class="prefix fa-solid fa-location-dot fa-lg"></i>
-                    <input id="event_location" type="text" class="validate" name="event_location" required>
+                    <input id="event_location" type="text" class="validate" name="event_location" placeholder=" "
+                        required>
                     <label for="event_location">Location</label>
                 </div>
             </div>
             <!-- submit button -->
-            <div class="col s12 center-align">
-                <button type="submit" class="btn-large elevated rounded mt-5">Add</button>
+            <div class="row">
+                <div class="col s12">
+                    <button type="submit" class="btn-large rounded text-shadow mt-5">Add</button>
+                </div>
             </div>
     </div>
     </form>
 </div>
-
 
 {% endblock %}
