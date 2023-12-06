@@ -39,8 +39,8 @@
                 <!-- event time -->
                 <div class="input-field col s6">
                     <i class="prefix fa-regular fa-clock fa-lg"></i>
-                    <input id="event_time" type="text" value="{{ event.event_time }}" class="validate timepicker" name="event_time"
-                        required>
+                    <input id="event_time" type="text" value="{{ event.event_time }}" class="validate timepicker"
+                        name="event_time" required>
                     <label for="event_time">Time</label>
                 </div>
                 <!--event location -->
@@ -55,8 +55,9 @@
 
             <!-- submit button -->
             <div class="col s12 center-align mt-5">
-                <a href="{{ url_for('profile', username=session['user'])}}" class="btn red darken-4 text-shadow">Cancel</a>
-                <button type="submit" class="btn elevated">
+                <a href="{{ url_for('profile', username=session['user'])}}"
+                    class="btn red darken-4 rounded text-shadow mr-2">Cancel</a>
+                <button type="submit" class="btn rounded text-shadow ml-2">
                     Done
                 </button>
             </div>
