@@ -9,16 +9,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-nav ul li :hover{
-    background-color:#ffffff!important;
+nav ul li :hover {
+    background-color: #ffffff !important;
 }
 
 .nav-wrapper {
-    background-color:#ffdfdb;
+    background-color: #ffdfdb;
 }
 
-.nav-wrapper a i{
-    color:black;
+.nav-wrapper a i {
+    color: black;
 }
 
 /* home page */
@@ -33,15 +33,12 @@ nav ul li :hover{
 #hero-heading {
     width: 80%;
     text-align: center;
-}
-
-#hero-heading > p{
     font-size: 16px;
 }
 
-#hero-heading > a:hover{
-    background-color:#ffffff;
-    color:#17268A;
+#hero-heading>a:hover {
+    background-color: #ffffff!important;
+    color: #17268A;
     font-weight: bold;
 }
 
@@ -52,7 +49,7 @@ nav ul li :hover{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
 
 h3 {
@@ -60,7 +57,7 @@ h3 {
     font-family: 'Comfortaa', Calibri;
 }
 
-.sign-up {
+.sign-up, .login {
     margin-right: 1rem;
     padding: 0 2rem 0 2rem;
     background-color: #17268A;
@@ -68,10 +65,7 @@ h3 {
 }
 
 .login {
-    padding: 0 2rem 0 2rem;
-    background-color: #17268A;
     margin-right: 0.7rem;
-    margin-top: 1rem;
 }
 
 .hero-image {
@@ -82,12 +76,13 @@ h3 {
     margin: auto;
 }
 
-h4{
+h4 {
     font-family: 'Comfortaa', Calibri;
 }
 
-.card{
-    border:1.5px solid blue;
+.card {
+    border:solid 2px #17268A;
+    color:#000000;
 }
 
 /* arrow animation */
@@ -129,7 +124,7 @@ h4{
 
 /* Footer */
 footer {
-    background-color:#ffdfdb;
+    background-color: #ffdfdb;
     height: 50px;
     margin-top: auto;
 }
@@ -150,7 +145,7 @@ footer {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
 
 .social-icons {
@@ -166,31 +161,30 @@ footer {
     list-style: none;
 }
 
-.social-icons li i {
-    color: #212529
-}
-
-
 .social-icons li a i {
     margin: 0 auto;
+    color:#212529;
 }
 
 .social-icons li a i:hover {
-    color:#17268A;
+    color: #17268A;
 }
 
 /* Log in Page */
-.login-panel{
+.login-panel {
     margin: 2rem;
 }
 
-.button-container > button{
-    background-color:#17268A;
+.button-container>button {
+    background-color: #17268A;
+    color:#ffffff;
 }
 
-.sign_up_link, .log_in_link{
-    color:#17268A;
+.button-container>button:hover {
+    background-color:lightgray;
+    color:#000000;
 }
+
 
 /* Sign-up Page */
 .sign-up-header {
@@ -207,7 +201,7 @@ footer {
 .profile-header>.card {
     width: 40%;
     height: 70%;
-    border:none;
+    border: none;
     margin: 0 auto;
 
 }
@@ -220,7 +214,7 @@ footer {
 }
 
 /* Events */
-.card-content > p{
+.card-content>p {
     font-size: 16px;
 }
 
@@ -241,7 +235,7 @@ input[type=text].timepicker-input-minutes {
 
 .input-field input:focus:not([readonly]),
 .input-field textarea:focus:not([readonly]) {
-   padding-top: unset !important;
+    padding-top: unset !important;
 }
 
 .input-field {
@@ -252,31 +246,32 @@ input[type=text].timepicker-input-minutes {
 
 /* medium screens */
 @media only screen and (min-width: 600px) {
-    .page-header > p{
+    .page-header>p {
         padding-right: 5rem;
         padding-left: 5rem;
     }
 
-    .hero-center{
+    .hero-center {
         top: 30%;
     }
 
-    #hero-heading > p{
+    #hero-heading>p {
         font-size: 18px;
     }
 }
 
 /* large screens */
 @media only screen and (min-width: 992px) {
-    #hero-heading{
+    #hero-heading {
         width: 60%;
     }
 
-    #hero-heading > p{
-        font-size: 1.23rem;;
+    #hero-heading>p {
+        font-size: 1.23rem;
+        ;
     }
 
-    .hero-center{
+    .hero-center {
         top: 30%;
     }
 }
