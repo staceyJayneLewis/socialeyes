@@ -1,17 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<div class="profile-header">
-  <div class="card">
-    <div class="card-image">
-      <img src="/static/images/icon.png" alt="profile icon">
-    </div>
-    <div class="card-description">
+<div class="profile-container">
+  <div class="profile-header">
+    <div class="card-panel center-align text-center">
+      <i class="fas fa-user-circle fa-6x mb-3"></i>
       <h4>{{ username }}</h4>
-      <a href="{{ url_for('add_event')}}" class="btn rounded">
-        + Add new event
-      </a>
+      <a href="{{ url_for('add_event')}}" class="btn rounded ">+ Add Event</a>
     </div>
   </div>
 </div>

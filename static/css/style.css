@@ -187,31 +187,24 @@ footer {
 }
 
 .sign_up_link,
-.login_link
-    {
+.login_link {
     color: #17268A !important;
 }
 
 /* Profile */
 .profile-header {
-    height: 35vh;
     background-color: #ffdfdb;
-    padding-top: 2rem;
+    height: 45vh;
+    position: relative;
 }
 
-.profile-header>.card {
-    width: 40%;
-    height: 70%;
-    border: none;
-    margin: 0 auto;
-
-}
-
-.card-image {
-    width: 200px;
-    float: left;
-    margin-right: 2rem;
-    object-fit: fill;
+.card-panel {
+    background-color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Events */
