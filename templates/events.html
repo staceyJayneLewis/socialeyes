@@ -38,7 +38,11 @@
                     </div>
                 </div>
                 {% else %}
-                    <a href="#"><i class="fa-solid fa-thumbs-up"></i> I'll be attending </a>
+                    {% if event._id in user_events %}
+                        <a href="{{ url_for('unattend_event', event_id=event._id) }}" class="red-text"><i class="fa-solid fa-thumbs-down"></i> I won't attending </a>
+                    {% else %}
+                        <a href="{{ url_for('attend_event', event_id=event._id) }}"><i class="fa-solid fa-thumbs-up"></i> I'll be attending </a>
+                    {% endif %}
                 {% endif %}
             </div>
         </div>

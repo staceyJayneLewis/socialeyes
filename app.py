@@ -44,7 +44,16 @@ def home():
 @login_required
 def get_events():
     events = list(mongo.db.events.find())
-    return render_template("events.html", events=events)
+    # list of any events the user is attending
+    try:
+        user_events = mongo.db.users.find_one(
+            {"username": session["user"]})["events_attending"]
+    except Exception:
+        user_events = []
+    return render_template(
+        "events.html",
+        events=events, user_events=user_events
+    )
 
 
 @app.route("/sign_up", methods=["GET", "POST"])
@@ -58,13 +67,14 @@ def sign_up():
             flash("Username already exists, please try a different one.")
             return redirect(url_for("sign_up"))
 
-        if request.form.get("password") != request.form.get("confirm-password"):
+        if request.form.get("password") != request.form.get("confirm-password"):  # noqa
             flash("Passwords do not match, please try again!")
             return redirect(url_for("sign_up"))
 
         signUp = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
+            "events_attending": [],
         }
         mongo.db.users.insert_one(signUp)
 
@@ -84,14 +94,16 @@ def login():
 
         if existing_user:
             # ensure hashed password matches user input
-            if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    return redirect(url_for("profile", username=session["user"]))
+            if check_password_hash(existing_user["password"], request.form.get("password")):  # noqa
+                session["user"] = request.form.get("username").lower()
+                return redirect(url_for("profile", username=session["user"]))
 
             else:
                 # invalid password match
-                flash("Username and/or password not recognised. Please try again.")
+                flash(
+                    "Username and/or password not recognised. "
+                    "Please try again."
+                )
                 return redirect(url_for("login"))
 
         else:
@@ -111,8 +123,11 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    if session["user"]:        
-        return render_template("profile.html", username=username, events=events)
+    if session["user"]:
+        return render_template(
+            "profile.html",
+            username=username, events=events
+        )
 
     return redirect(url_for('login'))
 
@@ -142,7 +157,7 @@ def add_event():
         mongo.db.events.insert_one(event)
         flash("Event added sucessfully!")
         return redirect(url_for("get_events"))
-        
+
     return render_template("add_event.html")
 
 
@@ -164,7 +179,7 @@ def edit_event(event_id):
             "created_by": session["user"],
         }
 
-        mongo.db.events.update_one({"_id": ObjectId(event_id)},{"$set":edit})
+        mongo.db.events.update_one({"_id": ObjectId(event_id)}, {"$set": edit})
         flash("Event updated sucessfully!")
         return redirect(url_for("profile", username=session["user"]))
 
@@ -181,7 +196,29 @@ def delete_event(event_id):
 
     mongo.db.events.delete_one({"_id": ObjectId(event_id)})
     flash("Event deleted succesfully!")
-    return redirect( url_for("profile", username=session['user']))
+    return redirect(url_for("profile", username=session['user']))
+
+
+@app.route("/attend_event/<event_id>")
+@login_required
+def attend_event(event_id):
+    mongo.db.users.find_one_and_update(
+        {"username": session["user"]},
+        {"$push": {"events_attending": ObjectId(event_id)}}
+    )
+    flash("Signed-up to event!")
+    return redirect(url_for("get_events"))
+
+
+@app.route("/unattend_event/<event_id>")
+@login_required
+def unattend_event(event_id):
+    mongo.db.users.find_one_and_update(
+        {"username": session["user"]},
+        {"$pull": {"events_attending": ObjectId(event_id)}}
+    )
+    flash("You are no longer attending this event.")
+    return redirect(url_for("get_events"))
 
 
 if __name__ == "__main__":
