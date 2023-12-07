@@ -198,7 +198,7 @@ footer {
     position: relative;
 }
 
-.card-panel {
+.profile-header > .card-panel {
     background-color: #ffffff;
     margin: 0;
     position: absolute;
