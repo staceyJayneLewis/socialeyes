@@ -6,7 +6,7 @@ The second aim is to give fundraising events/charities a platform where they can
 
 https://ui.dev/amiresponsive?url=https://socialeyes-1884ceb59a89.herokuapp.com
 
-<!-- ![screenshot](documentation/mockup.png) -->
+![screenshot](documentation/mockup.jpg)
 
 Below you can see the charts I created to visualise the flow of the website and any error messages or actions needed depending on the user interaction. You can see on the charts I have worked out what data needs to be collected or added to the database depending on user interaction and what error messages need to be put in place incase of an unexpected/incorrect response.
 
@@ -35,7 +35,8 @@ In this section, you will briefly explain your design processes.
 The colour scheme of Socialeyes is a mix of contrasting colours which was influenced from the illustration I chose for the homepage. The colours work well together even though they are all completely different colours and this can symbolise the objective of the app, which is to bring different people from different backgrounds together. 
 Also, according to colour psychology orange and blue both symbolise social communication, so these are the two I will carry out throughout the colour theme of the website.
 
-- `#000000` used for primary text.
+- `#17268a` used as part of the logo.
+- `#000000` used for primary text and logo.
 - `#FFFFFF` used for primary highlights.
 - `#17268a` used for secondary highlights.
 
@@ -110,66 +111,111 @@ Add/Edit Event
 
 ## Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Existing Features
 
-- **Title for feature #1**
+- **Navbar**
+<!-- 
+    Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!You will need to explain what value each of the features provides for the user,
+focusing on who this website is for, what it is that they want to achieve,
+and how your project is the best way to help them achieve these things. -->
+
+![screenshot](documentation/feature1.jpg)
+![screenshot](documentation/feature1-mobile.jpg)
+
+- **Logo**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/feature2.jpg)
 
-- **Title for feature #2**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature02.png)
-
-- **Title for feature #3**
+- **Callout header**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature3.jpg)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- **Arrow Button**
 
-Repeat as necessary for as many features as your site contains.
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-Hint: the more, the merrier!
+<!-- ![screenshot](documentation/feature3.jpg) -->
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- **Hero Image**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Cards**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Footer**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Arrow Button**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Login/Sign up Header/Events**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Login form**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Sign Up Form**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Login/Sign up link**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Profile Card**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Edit Event**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
+
+- **Add Event**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+<!-- ![screenshot](documentation/feature3.jpg) -->
 
 ### Future Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Location filter #1
+    - Users are shown events based on their location.
+- Add 'Attending' button #2
+    - Users are able to 'Attending' events they are interested in attending to show the event creator they are interested but also to add to the users profile as a reminder.
+- Filter upcoming events by date #3
+    - The ability to filter events by the closest dates on the upcoming events panel
+- Attendee counter #4
+    - Display how many people have said they are attending based on how many users have clicked 'attending'.
 
 ## Tools & Technologies Used
 
@@ -200,7 +246,9 @@ It contains 2 collections:
     | _id | ObjectId() | |
     | event_name | String | |
     | event_description | String | |
-    | due_date | String | |
+    | event_date | String | |
+    | event_location | String | |
+    | event_time | String | |
     | created_by | String | selected from the *users* collection |
 
 - **users**
@@ -217,7 +265,6 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 ## Deployment
 
 The live deployed application can be found deployed on [Heroku](https://socialeyes-1884ceb59a89.herokuapp.com).
-
 
 ### MongoDB Non-Relational Database
 
@@ -418,7 +465,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-<!-- Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku. -->
+No differences found on local and deployed site.
 
 ## Credits
 
