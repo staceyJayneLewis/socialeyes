@@ -1,8 +1,8 @@
 # [SOCIALEYES](https://socialeyes-1884ceb59a89.herokuapp.com)
 
-The aim of Socialeyes is to promote events that encourage people of all ages to socialize face to face through their interests/hobbies or charities to help improve mental health and conquer loneliness. Users will have the ability to view upcoming events and 'like' events they are interested in and even add their own event. 
+The aim of Socialeyes is to promote events that encourage people of all ages to socialize face to face through their interests/hobbies or charities to help improve mental health and conquer loneliness. This platform will give the space for users to have the ability to view upcoming events that may be of interest to them but also to add their own event if they want to. 
 
-The second aim is to give fundraising events/charities a platform where they can share any events or needs that could help them out for users who may have a little spare time. The event coordinators will have the ability to add, update and delete events, whilst also having the ability to see how many users are 'interested' in the event. 
+The second aim is to give fundraising events/charities a platform where they can share any events or needs that could help them out for users who may have a little spare time. The event coordinators will have the ability to add, update and delete events.
 
 https://ui.dev/amiresponsive?url=https://socialeyes-1884ceb59a89.herokuapp.com
 
@@ -24,11 +24,8 @@ Events
 
 ## UX
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Socialeyes is created as a simple interactive website, making it user-friendly and simple to use as it has a wide age range of target audience. The website has been designed in a simple linear structure so that it can be easily developed further in the future and has the potential to add many more features to it without the site looking overcrowded. It's a smooth journey to achieve what users are looking for with simple forms depending on what they need to do such as sign up or log in. The sign up form has only 4 inputs and log in has just 2 and both of which have a big blue highlighted button making it noticible for everyone to see using the hover button. To help the users further content hinting has also been implemented in the design to show users can scroll down for more content.
+The purpose of the app is to encourage users of all ages and therefore some users may not be tech savvy which is why the site has a very basic approach which also keeps users on the website as if they are overloaded with information of a complex looking form the users will leave the site. The type of site is also a site which users can or will be returning to as frequent as they want and so a simple design layout means it is easier to add new features accordingly for the admin.
 
 ### Colour Scheme
 
