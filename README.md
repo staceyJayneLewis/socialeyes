@@ -146,69 +146,78 @@ The navbar background colour has been blended into the colour of the callout sec
 
 - **Cards**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Simple cards designed to display the events on the upcoming events section on the homepage but also for the events and profile page. Each card has details of the events name, description, location, date and time with an 'I'll be attending' button on each event for users to sign up to the event. If the users create their own event they instead will be shown the edit or delete button as it is their own event they do not need to be shown the option to attend.
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature6.jpg)
 
 - **Footer**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The footer holds the links to social media pages which can increase following on social media or direct users to contact information if they have any queries or feedback. As common conventions I used the social media symbols through font awesome to respresent each social media brand as many are familiar with the icons. Each social media icon is black with the blue colour used throughout the site to highlight the icon on hover affect so that they stand out against the background colour of the footer which is the same colour as the hero image and navbar so it works with the flow of the design. 
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature7.jpg)
 
-- **Arrow Button**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-<!-- ![screenshot](documentation/feature3.jpg) -->
 
 - **Login/Sign up Header/Events**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature8.jpg)
 
 - **Login form**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature9.jpg)
 
 - **Sign Up Form**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature10.jpg)
 
 - **Login/Sign up link**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature11.jpg)
 
 - **Profile Card**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature12.jpg)
 
 - **Edit Event**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature13.jpg)
 
 - **Add Event**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature14.jpg)
 
 - **Delete Event**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-<!-- ![screenshot](documentation/feature3.jpg) -->
+![screenshot](documentation/feature15.jpg)
+
+
+- **Back to top arrow**
+
+    - The link is very useful for returning users back to the top of the site page especially for mobile users as if there are many results displayed users would have to scroll all the way back up to the top of the page if they wanted to return to the start of the page. The value this adds will be keeping users on the site page as they will not get frustrated and leave the site if they have numerous results to scroll through to go back up the page.
+
+![screenshot](documentation/feature16.jpg)
+
+
+- **log out modal**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature17.jpg)
 
 
 ### Future Features
