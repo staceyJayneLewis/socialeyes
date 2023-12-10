@@ -1,8 +1,6 @@
 # [SOCIALEYES](https://socialeyes-1884ceb59a89.herokuapp.com)
 
-The aim of Socialeyes is to promote events that encourage people of all ages to socialize face to face through their interests/hobbies or charities to help improve mental health and conquer loneliness. This platform will give the space for users to have the ability to see upcoming events that may be of interest and to click 'I'll be attending' to sign up for events or they can add their own event if they want to. 
-
-The second aim is to give fundraising events/charities a platform where they can share any events or needs that could help them out for users who may have a little spare time. The event coordinators will have the ability to add, update and delete events.
+The aim of Socialeyes is to promote events that encourage people of all ages to socialize face to face through their interests/hobbies or charities to help improve mental health and conquer loneliness. This platform will give the space for users to have the ability to see upcoming events that may be of interest and to click 'I'll be attending' to sign up for events or they can add their own event if they want to. The second aim is to give fundraising events/charities a platform where they can share any events or needs that could help them out for users who may have a little spare time. The event admins ​will have the ability to add, update and delete events.
 
 https://ui.dev/amiresponsive?url=https://socialeyes-1884ceb59a89.herokuapp.com
 
@@ -24,13 +22,13 @@ Events
 
 ## UX
 
-Socialeyes is created as a simple interactive website, making it user-friendly and simple to use as it has a wide age range of target audience. The website has been designed in a standard hierarchial tree structure so that the users does not to to click more than 3 times to get to their destination. This standard structure design means it can also be easily developed further in the future and has the potential to add many more features to it without the site looking overcrowded. It's a smooth journey to achieve what users are looking for with simple forms depending on what they need to do such as sign up or log in. 
-The sign up form has only 4 inputs and log in has just 2 and both of which have a big blue highlighted button making it noticable for everyone to see using the hover button. To help the users further content hinting has also been implemented in the design to show users can scroll down for more content.
-The purpose of the app is to encourage users of all ages and therefore some users may not be tech savvy which is why the site has a very basic approach which also keeps users on the website as if they are overloaded with information or a complex looking form it will lose the users attention. The type of site is also a site which users can or will be returning to as frequent as they want and so a simple design layout means it is easier to add new features accordingly for the admin. The branding was designed by myself by using speech marks as a respresentation of eyes followed by the brand name so that it is keeping to the convention of simplicity but it is also memorable so users will recognise the brand and boost it's popularity.
+Socialeyes is a simple interactive website that is user-friendly and easy to use as it has a wide age range of target audience. The website has been designed in a standard hierarchical tree structure so that the users do not need to click more than 3 times to get to their destination. This standard structure design means it can also be easily developed further in the future and has the potential to add many more features to it without the site looking overcrowded. It's a smooth journey to achieve what users are looking for with simple forms depending on what they need to do such as sign up or log in. 
+Features such as content hinting,  links, buttons, simple forms and hover effects have all been implemented into the design to help the users have a smooth user experience through the website. 
+The purpose of the app is to encourage users of all ages and therefore some users may not be tech-savvy which is why the site has a very basic approach to keep the user's focus as if they are overloaded with information or if something looks too complex it can lose the user's attention. The site is a platform users can or will be returning to as frequent as they want, and so a simple design layout means it is easier to add new features accordingly for the admin. The branding was designed by myself by using speech marks as a representation of eyes followed by the brand name so that it is keeping to the convention of simplicity, but it is also memorable, so users will recognise the brand and boost its popularity.
 
 ### Colour Scheme
 
-The colour scheme of Socialeyes is a mix of contrasting colours which was influenced from the illustration I chose for the homepage. The colours work well together even though they are all completely different colours and this can symbolise the objective of the app, which is to bring different people from different backgrounds together. 
+The colour scheme of Socialeyes is a mix of contrasting colours, which were influenced from the illustration I chose for the homepage hero image. The colours work well together even though they are all completely different colours, and this can symbolise the objective of the app, which is to bring different people from different backgrounds together. 
 Also, according to colour psychology orange and blue both symbolise social communication, so these are the two I will carry out throughout the colour theme of the website.
 
 - `#17268a` used as part of the logo.
@@ -57,19 +55,19 @@ I have used Google fonts to help with the styles of the fonts used in the websit
 
 ### New Site Users
 
-- As a new site user, I would like to 'like' which events I want to attend, so that I can sign up for the event.
-- As a new site user, I would like to like to be able to register for my own account so that I can sign up for events without having to fill in a form each time as it will already have my details stored.
+- As a new site user, I would like to have a 'I'll be attending' button for which events I want to attend, so that I can easily sign up for the event.
+- As a new site user, I would like to be able to register for my own account so that I can sign up for events without having to fill in a form each time, as it will already have my details stored.
 - As a new site user, I would like to simply view a list of different events so that I can decide which I prefer.
 - As a new site user, I would like to add my own events so that I can advertise any help needed for charities.
-- As a new site user, I would like have simple access to the sites social media pages so I can contact for help if needed or provide feedback.
+- As a new site user, I would like to have simple access to the site's social media pages, so I can contact them or provide feedback if needed.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to edit, so that I can so that I can update any details of my event.
-- As a returning site user, I would like to delete, so that I can delete my event if necessary.
-- As a returning site user, I would like to have the option to unattend events, so that I can unattend if i can no longer go to that event.
-- As a returning site user, I would like to login, so that I can view any events I will be attending.
-- As a returning site user, I would like to log out, so that I am no longer kept signed in if I leave the site.
+- As a returning site user, I would like to edit my event I created, so that I can update any details of my event.
+- As a returning site user, I would like to have the option to delete my event, so that I can delete my event if necessary and remove the data from the database.
+- As a returning site user, I would like to have the option to 'unattend' events, so that I can unattend if i can no longer go to that event.
+- As a returning site user, I would like to be able to log in, so that I can view any events I will be attending.
+- As a returning site user, I would like to be able to log out, so that I am no longer kept signed in when I leave the site.
 
 ### Site Admin
 
@@ -112,110 +110,110 @@ Add/Edit Event
 
 - **Navbar**
 
-The navbar background colour has been blended into the colour of the callout section for the website design so it becomes part of the design of the page. For easier navigaition and readibility for the user the navbar is responsive and has a collapsable white side navbar for smaller devices up to tablet size devices. The navbar feature is essential for users to navigate through each page of the site and it is a feature the users will always depend on to achieve what they want to do or see on the site. 
+    - The navbar background colour has been blended into the colour of the callout background for the website design, so it becomes part of the design of the page. For easier navigation and readability for the user, the navbar is responsive and has a collapsable white side navbar for smaller devices up to tablet size devices. The navbar feature is essential for users to navigate through each page of the site, and it is a feature the users will always depend on to achieve what they want to do or see on the site. 
 
 ![screenshot](documentation/feature1.jpg)
 ![screenshot](documentation/feature1-mobile.jpg)
 
 - **Logo**
 
-    - The logo sits within the navbar and following standard website conventions the logo is another way the user can 'click' their way back to the homepage for even simpler use of the site or app. The logo was designed by myself to represent the eyes in the word socialeyes by using ""speech marks as the concept is about socialising and communication between one another.
-    I've used the shade of blue that's used within the hero image so the brand flows nicely into the design of the site.
-    A logo increases brand awareness and recognition as the brand grows and people may even make a judgement based on how the logo makes them feel, which is one of the main values to having it on the website. 
+    - The logo sits within the navbar and, following standard website conventions, the logo is another way the user can 'click' their way back to the homepage for even simpler use of the site or app. The logo was designed by myself to represent the eyes in the word Socialeyes by using "" speech marks to symbolise the concept of socialising and communication between one another. I have used a fixed navbar to make sure the user always has access to the navbar so they don't need to scroll all the way back up to the top of the page to access the navbar. 
+     I've used the shade of blue that's used within the hero image so the brand flows nicely into the design of the site. 
+    A logo increases brand awareness and recognition as the brand grows, and people may even make a judgement on the app/site based on how the logo makes them feel, which is one of the main values of the branding. 
 
 ![screenshot](documentation/feature2.jpg)
 
 - **Callout header**
 
-    - The callout header includes a header with the company slogan to capture the audiences attention along with a short description of the company's philosophy. If the user is not logged in it will also include log in or sign up buttons to make it easier for users to find what they want to do without having to look far. 
+    - The callout header includes a header with the company slogan to capture the audiences' attention, along with a short description of the company's philosophy. If the user is not logged in, it will also include log in or sign up buttons to make it easier for users to find what they want to do without having to look far. 
 
 ![screenshot](documentation/feature3.jpg)
 
 - **Arrow Button**
 
-    - An animated arrow displays on the home page to show users that you can scroll down to view more or click the arrow so it automatically jumps to the next section of the page. The use of animation clearly shows users that it is clickable.
+    - An animated arrow displays on the home page to show users that you can scroll down to view more, or click the arrow so it automatically jumps to the next section of the page. The use of animation clearly shows users that it is clickable.
 
 ![screenshot](documentation/feature4.jpg)
 
 - **Hero Image**
 
-    - The hero image is for aesthetic to make the website look visually appealing but to also demonstrate visually the purpose of the website at first glance. The hero image is a colourful illustration of people communicating amongst one another and each person looks visually different, which as I mentioned previous in the colour scheme section that the colours work well together even though they are all completely different colours and it is a good way to symbolise the objective of the app, which is to bring different people from different backgrounds together.
+    - The hero image is for aesthetic to make the website look visually appealing, but to also demonstrate visually the purpose of the website at first glance. The hero image is a colourful illustration of people communicating amongst one another and each person looks visually different, which as I mentioned previous in the colour scheme section that the colours work well together even though they are all completely different colours, and it is a good way to symbolise the objective of the app.
     The value a good designed site can bring is a good impression and returning customers due to its memorable design, and so the effective use of colour and imagery is important for first impressions.
 
 ![screenshot](documentation/feature5.jpg)
 
 - **Cards**
 
-    - Simple cards designed to display the events on the upcoming events section on the homepage but also for the events and profile page. Each card has details of the events name, description, location, date and time with an 'I'll be attending' button on each event for users to sign up to the event. If the users create their own event they instead will be shown the edit or delete button as it is their own event they do not need to be shown the option to attend.
+    - Simple cards designs are used to display the events of the upcoming events or the homepage, events page and profile page. Each card has details of the event name, description, location, date and time with an 'I'll be attending' button on each event for users to sign up to the event. If the users create their own event they instead will be shown the edit or delete button as it is their own event, they do not need to be shown the option to attend.
 
 ![screenshot](documentation/feature6.jpg)
 
 - **Footer**
 
-    - The footer holds the links to social media pages which can increase following on social media or direct users to contact information if they have any queries or feedback. As common conventions I used the social media symbols through font awesome to respresent each social media brand as many are familiar with the icons. Each social media icon is black with the blue colour used throughout the site to highlight the icon on hover affect so that they stand out against the background colour of the footer which is the same colour as the hero image and navbar so it works with the flow of the design. 
+    - The footer holds the links to social media pages, which can increase following on social media or direct users to contact information if they have any queries or feedback. As common conventions, I used the social media symbols through font awesome to represent each social media brand as many are familiar with the icons. Each social media icon is black with the blue colour used throughout the site to highlight the icon on hover affect so that they stand out against the background colour of the footer which is the same colour as the hero image and navbar so it works with the flow of the design. 
 
 ![screenshot](documentation/feature7.jpg)
 
 
 - **Login/Sign up Header/Events**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - I have sectioned the page headers with the same pink shade that I used on the callout page so that the website design is easily learnable, so the user feels familiar and confident with the website layout on each page throughout. The headers are all the same size and placement, so the users also knows instantly where to look for the short description which explains each page. 
+    For the events page header I have added a 'Go to my events' button for easier access to the profile to see their own events they have created 
+    and have included a hover effect on the button to again keep to the conventions so users clearly know it is a clickable button. 
 
 ![screenshot](documentation/feature8.jpg)
 
-- **Login form**
+- **Login & Sign up form**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The log in and sign up features are the most important features as without them the user cannot do anything other than see the upcoming events, so the forms are responsive for all size devices and has followed a simple layout design to not make the form look overcrowded. 
+    The log in form has 2 inputs for a username and password whereas the sign up form additionally includes a confirm password input and both     have  a large log in/sign up button to log in or sign up the user once entered their details. I have included the materialise animation on the text inputs, so the text is large but when the input is clicked the text shrinks so the user has space to type their details. The animation is useful if the user needs a reminder of which input field it is unlike a placeholder where the button is clicked it disappears. I have also used the common icons you would see on many sites for username and password fields so this is also something the users will be familiar with. Both forms include form validation for each input, including checking if the password and confirm passwords match by including my own validation code for that.
 
-![screenshot](documentation/feature9.jpg)
-
-- **Sign Up Form**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature10.jpg)
+![screenshot](documentation/feature9&10.jpg)
 
 - **Login/Sign up link**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The login and sign up form each also include a link underneath the form which will easily guide them to the correct page if they are on the wrong form for their convenience, for example if they are already registered but are on the sign-up form or if they are on the login form but need to register.
+    The link will bring more ease to the customer journey when using the site and will make sure they are provided with as much support as possible to make it a quick but smooth experience. Providing a smooth experience is integral to avoid the user feeling confused or frustrated and leaving the site.
 
 ![screenshot](documentation/feature11.jpg)
 
 - **Profile Card**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The profile includes a profile card which includes the users' username, a placeholder for a picture and also an add events button which is a quick shortcut for users to add their own event if they need to. The icon used is from font awesome to represent an image, so the users feels like they have their own space on their profile that includes all of their own events created.
 
 ![screenshot](documentation/feature12.jpg)
 
 - **Edit Event**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - As mentioned previously, the edit button is only displayed on any events the user has created as they are then the admin for that event. Edit event is the add event form, but the input gets automatically filled with the details of the selected event the admin wants to edit, so the user can edit what they need accordingly and then select 'done' to update the details. 
 
 ![screenshot](documentation/feature13.jpg)
 
 - **Add Event**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Add event is the same style form as the other forms on the site so that the user becomes familiar with the structure and layout of the forms and again, the form is also responsive so it can be used well on all different sized devices. The event inputs include event name, event description, time, date and location followed by the add button on the bottom of the form to simply add the event. In case of the user changing their mind, I have also included a cancel button should they need to return to the page if they decide not to add an event to make sure that they don't need to use the back button on the browsers site. 
+    I have added a date and time picker to the form so that everyone uses the same format of date and time so it's easier for the users but also   
+    easier for working with the database when using the CRUD functionality.  
 
 ![screenshot](documentation/feature14.jpg)
 
 - **Delete Event**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The confirm delete feature is a responsive confirmation pop up which allows admin to have the safety of an extra step to avoid unwanted deletion of events. The modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour. If the user selects 'No' then they will return to the page they were on, however if they click yes the users will be signed out of the session and will have to log back in to return to their profile and events page.
 
 ![screenshot](documentation/feature15.jpg)
 
 
 - **Back to top arrow**
 
-    - The link is very useful for returning users back to the top of the site page especially for mobile users as if there are many results displayed users would have to scroll all the way back up to the top of the page if they wanted to return to the start of the page. The value this adds will be keeping users on the site page as they will not get frustrated and leave the site if they have numerous results to scroll through to go back up the page.
+    - The link is very useful for returning users to the top of the site page, especially for mobile users as if there are many results displayed users would have to scroll all the way back up to the top of the page if they wanted to return to the start of the page. The value this adds will be keeping users on the site, as they will not get frustrated and leave if they have numerous results to scroll through to go back up the page.
 
 ![screenshot](documentation/feature16.jpg)
 
 
 - **log out modal**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The log out feature is a responsive confirmation pop up which allows users to confirm their logging out in case they accidentally clicked the log out button to avoid the inconvenience of users having to log back in each time unnecessarily. Again, the modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour similar to the delete event. 
 
 ![screenshot](documentation/feature17.jpg)
 
@@ -225,7 +223,7 @@ The navbar background colour has been blended into the colour of the callout sec
 - Location filter #1
     - Users are shown events based on their location.
 - Add 'Attending' button #2
-    - Users are able to 'Attending' events they are interested in attending to show the event creator they are interested but also to add to the users profile as a reminder.
+    - Users are able to 'Attending' events they are interested in attending to show the event creator they are interested, but also to add to the users profile as a reminder.
 - Filter upcoming events by date #3
     - The ability to filter events by the closest dates on the upcoming events panel
 - Attendee counter #4
