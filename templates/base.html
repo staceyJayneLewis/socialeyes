@@ -20,6 +20,7 @@
 
     <header>
         <!-- Top nav -->
+        <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper pr-4">
                 <a href="{{ url_for('home') }}" class="brand-logo black-text">
@@ -42,16 +43,16 @@
                 <!-- Modal: log out -->
                 <div id="modal-logout" class="modal">
                     <div class="modal-content black-text">
-                        <h4>Log Out</h4>
-                        <p>Are you sure you want to log out?</p>
-                        <a href="#!" class="modal-close waves-effect btn green">No</a>
+                        <h5>Are you sure you want to log out?</h5>
+                        <a href="#!" class="modal-close waves-effect btn red">No</a>
                         <a href="{{ url_for('logout') }}"
-                            class="modal-close waves-effect btn red">Yes</a>
+                            class="modal-close waves-effect btn green">Yes</a>
                     </div>
                 </div>
                 {% endif %}
             </div>
         </nav>
+        </div>
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}" class="black-text">Home</a></li>

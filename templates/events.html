@@ -3,7 +3,7 @@
 <div class="page-header">
     <h3>Events</h3>
     <p>Interested in attending an event? Let them know by clicking the 'I'll be attending' button.</p>
-    <a href="{{ url_for('profile', username=session['user'])}}" class="btn rounded ">Go to saved
+    <a href="{{ url_for('profile', username=session['user'])}}" class="btn rounded ">Go to my
         events</a>
 </div>
 
@@ -27,19 +27,18 @@
                 <!-- Delete Event Modal -->
                 <div id="modal-{{ event._id }}" class="modal">
                     <div class="modal-content">
-                        <h4>Delete Event</h4>
-                        <p>Are you sure you want to delete this event?</p>
+                        <h5>Are you sure you want to delete this event?</h5>
                         <small>This action is permanent, and cannot be undone.</small>
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect btn green">No</a>
+                        <a href="#!" class="modal-close waves-effect btn red">No</a>
                         <a href="{{ url_for('delete_event', event_id=event._id) }}"
-                            class="modal-close waves-effect btn red">Yes</a>
+                            class="modal-close waves-effect btn green">Yes</a>
                     </div>
                 </div>
                 {% else %}
                     {% if event._id in user_events %}
-                        <a href="{{ url_for('unattend_event', event_id=event._id) }}" class="red-text"><i class="fa-solid fa-thumbs-down"></i> I won't attending </a>
+                        <a href="{{ url_for('unattend_event', event_id=event._id) }}" class="red-text"><i class="fa-solid fa-thumbs-down"></i> I'm no longer attending </a>
                     {% else %}
                         <a href="{{ url_for('attend_event', event_id=event._id) }}"><i class="fa-solid fa-thumbs-up"></i> I'll be attending </a>
                     {% endif %}
@@ -49,4 +48,8 @@
     </div>
     {% endfor %}
 </div>
+<div id="back-to-top" class="center-align">
+    <p class="text-center"><a href="#" aria-label="link to top of the page">Back to the top<i
+          class="fa-solid fa-arrow-turn-up fa-md"></i></a></p>
+  </div>
 {% endblock %}
