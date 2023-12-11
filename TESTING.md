@@ -72,7 +72,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-
+| Browser | Home | Login | Sign Up | Profile | Events | Add Events | Edit Events |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/chrome-home-compat.jpg) | ![screenshot](documentation/chrome-login-compat.jpg) | ![screenshot](documentation/chrome-singup-compat.jpg) | ![screenshot](documentation/chrome-profie-compat.jpg) | ![screenshot](documentation/chrome-events-compat.jpg) | ![screenshot](documentation/chrome-addevents-compat.jpg) | ![screenshot](documentation/chrome-editevents-compat.jpg) | Works as expected |
+| Firefox | ![screenshot](documentation/firefox-home.jpg) | ![screenshot](documentation/firefox-login.jpg) | ![screenshot](documentation/firefox-signup.jpg) | ![screenshot](documentation/firefox-profile.jpg) | ![screenshot](documentation/firefox-events.jpg) | ![screenshot](documentation/firefox-addevent.jpg) | ![screenshot](documentation/firefox-edit.jpg) | Works as expected |
+| Brave | ![screenshot](documentation/brave-home.jpg) | ![screenshot](documentation/brave-login.jpg) | ![screenshot](documentation/brave-signup.jpg) | ![screenshot](documentation/brave-profile.jpg) | ![screenshot](documentation/brave-events.jpg) | ![screenshot](documentation/brave-add-event.jpg) | ![screenshot](documentation/brave-edit-event.jpg) | Works as expected |
 
 ## Responsiveness
 
