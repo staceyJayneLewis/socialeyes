@@ -24,12 +24,12 @@ nav ul li :hover {
 .page-header {
     background-color: #ffdfdb;
     height: 35vh;
-    position:relative;
+    position: relative;
     text-align: center;
     font-size: 16px;
 }
 
-.page-content{
+.page-content {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -155,6 +155,7 @@ footer {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 /* end of code used from w3schools */
 
 
@@ -181,19 +182,16 @@ footer {
 }
 
 /* Log in Page */
-.login-panel {
-    margin: 2rem;
+/* Sign-up Page */
+.form-container {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .button-container>button {
     background-color: #17268A;
     color: #ffffff;
-}
-
-
-/* Sign-up Page */
-.sign-up-header {
-    padding-top: 2rem;
 }
 
 .sign_up_link,
@@ -208,7 +206,7 @@ footer {
     position: relative;
 }
 
-.profile-header > .card-panel {
+.profile-header>.card-panel {
     background-color: #ffffff;
     margin: 0;
     position: absolute;
@@ -256,11 +254,6 @@ label {
 /* medium screens */
 @media only screen and (min-width: 600px) {
 
-    .page-header>p {
-        padding-right: 5rem;
-        padding-left: 5rem;
-    }
-
     #hero-heading {
         top: 30%;
     }
@@ -271,6 +264,11 @@ label {
 
     .hero-center {
         top: 50%;
+    }
+
+    .form-container {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -287,5 +285,9 @@ label {
 
     .hero-center {
         top: 30%;
+    }
+
+    .form-container {
+        margin-top: 3%;
     }
 }
