@@ -21,6 +21,23 @@ nav ul li :hover {
     color: black;
 }
 
+.page-header {
+    background-color: #ffdfdb;
+    height: 35vh;
+    position:relative;
+    text-align: center;
+    font-size: 16px;
+}
+
+.page-content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 /* home page */
 .callout {
     width: 100%;
@@ -129,14 +146,6 @@ footer {
     margin-top: auto;
 }
 
-.page-header {
-    background-color: #ffdfdb;
-    height: 30vh;
-    text-align: center;
-    padding: 25px;
-    font-size: 16px;
-}
-
 /* code used from w3schools as referenced in README.md sources */
 .center {
     margin: 0;
@@ -146,6 +155,7 @@ footer {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+/* end of code used from w3schools */
 
 
 .social-icons {
@@ -245,6 +255,7 @@ label {
 
 /* medium screens */
 @media only screen and (min-width: 600px) {
+
     .page-header>p {
         padding-right: 5rem;
         padding-left: 5rem;
@@ -256,6 +267,10 @@ label {
 
     #hero-heading>p {
         font-size: 18px;
+    }
+
+    .hero-center {
+        top: 50%;
     }
 }
 
