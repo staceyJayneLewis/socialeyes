@@ -111,6 +111,14 @@ h4 {
 
 }
 
+.page-tab{
+    color:#000000;
+}
+
+.page-tab:hover{
+    color:#17268A;
+}
+
 @keyframes myAnim {
     0% {
         animation-timing-function: ease-out;
