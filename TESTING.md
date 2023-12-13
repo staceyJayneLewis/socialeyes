@@ -95,10 +95,13 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse-mobile-home.jpg) | ![screenshot](documentation/lighthouse-desktop-home.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc, Desktop: PASS |
+| Log in | ![screenshot](documentation/lighthouse-mobile-login.jpg) | ![screenshot](documentation/lighthouse-desktop-login.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc, Desktop: PASS |
+| Sign up | ![screenshot](documentation/lighthouse-mobile-signup.jpg) | ![screenshot](documentation/lighthouse-desktop-signup.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc, Desktop: PASS |
+| Profile | ![screenshot](documentation/lighthouse-mobile-profile.jpg) | ![screenshot](documentation/lighthouse-desktop-profile.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc, Desktop: PASS |
+| Events | ![screenshot](documentation/lighthouse-mobile-events.jpg) | ![screenshot](documentation/lighthouse-desktop-events.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc, Desktop: PASS |
+| Add Event | ![screenshot](documentation/lighthouse-mobile-addevents.jpg) | ![screenshot](documentation/lighthouse-desktop-addevents.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc, Desktop: PASS |
+| Edit Event | ![screenshot](documentation/lighthouse-mobile-edit.jpg) | ![screenshot](documentation/lighthouse-desktop-edit.jpg) | Mobile: minor warnigns on mobile from external files(heroku, cdn links) etc,  Desktop: PASS |
 
 ## Defensive Programming
 
