@@ -82,31 +82,14 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-home.webm) | ![screenshot](documentation/responsive-login.webm) | ![screenshot](documentation/responsive-signup.webm) | ![screenshot](documentation/responsive-profile.webm) | ![screenshot](documentation/responsive-events.webm) | ![screenshot](documentation/responsive-add-events.webm) |![screenshot](documentation/responsive-edit.webm) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet-home.webm) | ![screenshot](documentation/responsive-tablet-login.webm) | ![screenshot](documentation/responsive-tablet-signup.webm) | ![screenshot](documentation/responsive-tablet-profile.webm) | ![screenshot](documentation/responsive-events.webm) | ![screenshot](documentation/responsive-tablet-addevent.webm) |![screenshot](documentation/responsive-tablet-edit.webm) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop-home.webm) | ![screenshot](documentation/responsive-desktop-login.webm) | ![screenshot](documentation/responsive-desktop-signup.webm) | ![screenshot](documentation/responsive-desktop-profile.webm) | ![screenshot](documentation/responsive-desktop-events.webm) | ![screenshot](documentation/responsive-desktop-addevent.webm) | ![screenshot](documentation/responsive-desktop-edit.webm) | Works as expected |
+| Device | Home | Login | Sign up | Profile | Events | Add Events | Edit Event |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsive-home.gif) | ![screenshot](documentation/responsive-login.gif) | ![screenshot](documentation/responsive-signup.gif) | ![screenshot](documentation/responsive-profile.gif) | ![screenshot](documentation/responsive-events.gif) | ![screenshot](documentation/responsive-add-events.gif) |![screenshot](documentation/responsive-edit.gif) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet-home.gif) | ![screenshot](documentation/responsive-tablet-login.gif) | ![screenshot](documentation/responsive-tablet-signup.gif) | ![screenshot](documentation/responsive-tablet-profile.gif) | ![screenshot](documentation/responsive-events.gif) | ![screenshot](documentation/responsive-tablet-addevent.gif) |![screenshot](documentation/responsive-tablet-edit.gif) | Works as expected |
+| Desktop | ![screenshot](documentation/responsive-desktop-home.gif) | ![screenshot](documentation/responsive-desktop-login.gif) | ![screenshot](documentation/responsive-desktop-signup.gif) | ![screenshot](documentation/responsive-desktop-profile.gif) | ![screenshot](documentation/responsive-desktop-events.gif) | ![screenshot](documentation/responsive-desktop-addevent.gif) | ![screenshot](documentation/responsive-desktop-edit.gif) | Works as expected |
 | Google Pixel 7 | ![screenshot](documentation/google-pixel7-home.png) | ![screenshot](documentation/google-pixel7-home2.png) | ![screenshot](documentation/google-pixel7-login.png) | ![screenshot](documentation/google-pixel7-signup.png) | ![screenshot](documentation/google-pixel7-profile.png) | ![screenshot](documentation/google-pixel7-events.png) | ![screenshot](documentation/google-pixel7-addevent.png) | ![screenshot](documentation/google-pixel7-edit.png) | Works as expected |
 
 ## Lighthouse Audit
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
@@ -189,57 +172,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
 | repeat for all remaining pages | x | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## User Story Testing
 
