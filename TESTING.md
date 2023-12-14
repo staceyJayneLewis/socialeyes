@@ -13,7 +13,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsocialeyes-1884ceb59a89.herokuapp.com%2Fhome) | ![screenshot](documentation/html_home.jpg) | No errors to show |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsocialeyes-1884ceb59a89.herokuapp.com%2Flogin) | ![screenshot](documentation/html_login.jpg) | No errors |
 | Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsocialeyes-1884ceb59a89.herokuapp.com%2Fsign_up) | ![screenshot](documentation/html_sign_up.jpg) | No Errors |
-| Profile | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_profile.jpg) | Stray div end tag |
+| Profile | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_profile.jpg) | No Errors |
 | Events | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_events.jpg) | No Errors |
 | Add Event | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_add_event.jpg) | No Errors |
 | Edit Event | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_edit.jpg) | No Errors |
@@ -21,31 +21,6 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- If you are copying/pasting your HTML code, use this link: https://jigsaw.w3.org/css-validator/#validate_by_input
-- (*recommended*) If you are using the live deployed site, use this link: https://jigsaw.w3.org/css-valiqdator/#validate_by_uri
-
-It's recommended to validate the live site if you only have a single CSS file using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to the page to validate it again in the future.
-The URL will look something like this:
-
-- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FstaceyJayneLewis.github.io%2Fsocialeyes
-
-If you have multiple CSS files, then individual [validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)
-is recommended for the additional CSS files.
-
-**IMPORTANT**: Third-Party tools
-
-If you're using extras like Bootstrap, Materialize, Font Awesome, then sometimes the validator
-will attempt to also validate this code, even if it's not part of your own actual code.
-You are not required to validate the external libraries or frameworks!
-
-Sample CSS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -199,88 +174,82 @@ Defensive programming was manually tested with the below user acceptance testing
 
 - 404 error on profile page  #1
 
-    ![screenshot](documentation/bug#1.png)
-    ![screenshot](documentation/bug#1-2.png)
-    ![screenshot](documentation/bug#1-3.png)
+    ![screenshot](documentation/bug1.png)
+    ![screenshot](documentation/bug1-2.png)
+    ![screenshot](documentation/bug1-3.png)
 
     - After some research I discovered that the 404 error codes are generated when a user attempts to access a webpage that does not exist, has been moved, or has a dead or broken link. This made me realise that it was because I did not have an active user session and needed to log in or sign up. In the third screenshot you will see it is now resolved.
 
 - Sign up details not reflecting on mongodb database when I submit the form it does not show any error message and refreshes the sign up form once submitted the details. #2
 
-    ![screenshot](documentation/bug#2.png)
-    ![screenshot](documentation/bug#2-2.png)
-    ![screenshot](documentation/bug#2-3.png)
-    ![screenshot](documentation/bug#2-4.png)
-    ![screenshot](documentation/bug#2-5.png)
+    ![screenshot](documentation/bug2.png)
+    ![screenshot](documentation/bug2-2.png)
+    ![screenshot](documentation/bug2-3.png)
+    ![screenshot](documentation/bug2-4.png)
+    ![screenshot](documentation/bug2-5.png)
 
     - As you can see in the above I realised the problem was that I needed to add the post method so it can post the information to the connected database.
 
 - jinja2.exceptions.TemplateSyntaxError: unexpected '%' #3
 
-    ![screenshot](documentation/bug#3.png)
-    ![screenshot](documentation/bug#3-2.png)
-    ![screenshot](documentation/bug#3-3.png)
+    ![screenshot](documentation/bug3.png)
+    ![screenshot](documentation/bug3-2.png)
+    ![screenshot](documentation/bug3-3.png)
 
     - To fix this, After using stackoverflow to help resolve the problem I realised I added double brackets on the if statement block instead of one bracket.
 
 - Edit template not displaying when clicking on the edit button #4
     - There was no error message displaying from python which would tell me the issue however after looking at the URL when clicking on event, it shows the html code in the url which made me realise this was a link issue somewhere.
 
-    ![screenshot](documentation/bug#4.png)
-    ![screenshot](documentation/bug#4-2.png)
+    ![screenshot](documentation/bug4.png)
+    ![screenshot](documentation/bug4-2.png)
 
     - After realising the issue may be with a link I looked back over my code and noticed that the edit button a href does not include the double brackets. After adding the brackets its works as expected.
 
 - Type Error : 'collection' object is not callable #5
 
-    ![screenshot](documentation/bug#5.png)
-    ![screenshot](documentation/bug#5-2.png)
+    ![screenshot](documentation/bug5.png)
+    ![screenshot](documentation/bug5-2.png)
 
     - To fix this, I looked on the mongo db website and slack to discover that the update() method that I am using was deprecated and instead on mongo db site (https://www.mongodb.com/docs/manual/reference/method/db.collection.update/) it advises to use the update_one() method however to also use the $set with the dictionary to set the dictionary.
 
 - Text always to the left on buttons and unable to center it #6
 
-    ![screenshot](documentation/bug#6.png)
-    ![screenshot](documentation/bug#6-2.png)
+    ![screenshot](documentation/bug6.png)
+    ![screenshot](documentation/bug6-2.png)
 
     - To fix this, I checked over my code on the inspect dev tools I noticed I still had a class on there 'icon-right' from when I had originally included icons on the button and forgotten to remove. After removing this class it fixed the bug.
 
 - Rounded class not working when applied to the button with materialise web #8
 
-    ![screenshot](documentation/bug#7.png)
-    ![screenshot](documentation/bug#7-2.png)
+    ![screenshot](documentation/bug7.png)
+    ![screenshot](documentation/bug7-2.png)
 
     - After research with the help of my mentor I discovered the classes were not working as on the source there is no such class as rounded in Materialize Web css however they were displaying in the github css file. 
     After looking at the materialize github we discovered that Materialize never updated their "Getting Started" information for the CDN links and noticed they have a "beta" release and I was using the alpha release. Soon as I updated the CDN link with the beta version the round class could be applied and worked successfully.
 
 - Navbar img logo doesn't work on the profile page and edit/add event page but works on all other pages. #8
 
-    ![screenshot](documentation/bug#8.png)
+    ![screenshot](documentation/bug8.png)
 
     - To fix this, I changed the src link to a url_for link instead as I noticed I was using a relative path link in error. 
 
 
 - Home page arrow button does not work when clicked if user not logged in #9
 
-   ![screenshot](documentation/bug#9.png)
+   ![screenshot](documentation/bug9.png)
 
    - Whilst using DevTools I checked the caching on my site. When I checked the 'disable cache' box and kept dev tools open I worked as normal.  
 
-- Home page arrow button does not work when clicked if user not logged in #9
-
-   ![screenshot](documentation/bug#9.png)
-
-   - Whilst using DevTools I checked the caching on my site. When I checked the 'disable cache' box and kept dev tools open I worked as normal.
-
 - Log in link on the sign up page redirects to the sign up page rather than the log in page #10
 
-   ![screenshot](documentation/bug#10.png)
+   ![screenshot](documentation/bug10.png)
 
    - I corrected the url as the url_for included the sign up function rather than the log in function.
 
 - When validating the jingja code using HTML validator it says there is a stray div.
 
-   ![screenshot](documentation/bug#11.jpg) 
+   ![screenshot](documentation/bug11.jpg) 
 
    - Changing the position of the endif to the last line where the end of the for loop closes fixed the problem as its no longer looping over the closing div tags.
 
