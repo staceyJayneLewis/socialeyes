@@ -278,16 +278,16 @@ Defensive programming was manually tested with the below user acceptance testing
 
    - I corrected the url as the url_for included the sign up function rather than the log in function.
 
+- When validating the jingja code using HTML validator it says there is a stray div.
+
+   ![screenshot](documentation/bug#11.jpg) 
+
+   - Changing the position of the endif to the last line where the end of the for loop closes fixed the problem as its no longer looping over the closing div tags.
+
 ## Unfixed Bugs
 
 - On devices smaller than 300px, the page starts to have `overflow-x` scrolling.
 
-    ![screenshot](documentation/unfixed-bug01.png)
+     ![screenshot](documentation/unfixed-bug1.jpg)
 
     - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read particularly on inputs and on the mobile sidebar.
-
-- When validating the jingja code using HTML validator it says there is a stray div.
-
-    ![screenshot](documentation/unfixed-bug03.png)
-
-    - Attempted fix: when attempted to fix it affects the for loop of events.
