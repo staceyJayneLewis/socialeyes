@@ -203,87 +203,97 @@ from the respective feature.
 
 ## Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- 404 error on profile page  #1
 
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
+    ![screenshot](documentation/bug#1.png)
+    ![screenshot](documentation/bug#1-2.png)
+    ![screenshot](documentation/bug#1-3.png)
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+    - After some research I discovered that the 404 error codes are generated when a user attempts to access a webpage that does not exist, has been moved, or has a dead or broken link. This made me realise that it was because I did not have an active user session and needed to log in or sign up. In the third screenshot you will see it is now resolved.
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
+- Sign up details not reflecting on mongodb database when I submit the form it does not show any error message and refreshes the sign up form once submitted the details. #2
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+    ![screenshot](documentation/bug#2.png)
+    ![screenshot](documentation/bug#2-2.png)
+    ![screenshot](documentation/bug#2-3.png)
+    ![screenshot](documentation/bug#2-4.png)
+    ![screenshot](documentation/bug#2-5.png)
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+    - As you can see in the above I realised the problem was that I needed to add the post method so it can post the information to the connected database.
 
-    ![screenshot](documentation/bug01.png)
+- jinja2.exceptions.TemplateSyntaxError: unexpected '%' #3
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bug#3.png)
+    ![screenshot](documentation/bug#3-2.png)
+    ![screenshot](documentation/bug#3-3.png)
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+    - To fix this, After using stackoverflow to help resolve the problem I realised I added double brackets on the if statement block instead of one bracket.
 
-    ![screenshot](documentation/bug02.png)
+- Edit template not displaying when clicking on the edit button #4
+    - There was no error message displaying from python which would tell me the issue however after looking at the URL when clicking on event, it shows the html code in the url which made me realise this was a link issue somewhere.
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bug#4.png)
+    ![screenshot](documentation/bug#4-2.png)
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
+    - After realising the issue may be with a link I looked back over my code and noticed that the edit button a href does not include the double brackets. After adding the brackets its works as expected.
 
-    ![screenshot](documentation/bug03.png)
+- Type Error : 'collection' object is not callable #5
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bug#5.png)
+    ![screenshot](documentation/bug#5-2.png)
 
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
+    - To fix this, I looked on the mongo db website and slack to discover that the update() method that I am using was deprecated and instead on mongo db site (https://www.mongodb.com/docs/manual/reference/method/db.collection.update/) it advises to use the update_one() method however to also use the $set with the dictionary to set the dictionary.
 
-    ![screenshot](documentation/bug04.png)
+- Text always to the left on buttons and unable to center it #6
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bug#6.png)
+    ![screenshot](documentation/bug#6-2.png)
 
-- Python `E501 line too long` (93 > 79 characters)
+    - To fix this, I checked over my code on the inspect dev tools I noticed I still had a class on there 'icon-right' from when I had originally included icons on the button and forgotten to remove. After removing this class it fixed the bug.
 
-    ![screenshot](documentation/bug04.png)
+- Rounded class not working when applied to the button with materialise web #8
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bug#7.png)
+    ![screenshot](documentation/bug#7-2.png)
+
+    - After research with the help of my mentor I discovered the classes were not working as on the source there is no such class as rounded in Materialize Web css however they were displaying in the github css file. 
+    After looking at the materialize github we discovered that Materialize never updated their "Getting Started" information for the CDN links and noticed they have a "beta" release and I was using the alpha release. Soon as I updated the CDN link with the beta version the round class could be applied and worked successfully.
+
+- Navbar img logo doesn't work on the profile page and edit/add event page but works on all other pages. #8
+
+    ![screenshot](documentation/bug#8.png)
+
+    - To fix this, I changed the src link to a url_for link instead as I noticed I was using a relative path link in error. 
+
+
+- Home page arrow button does not work when clicked if user not logged in #9
+
+   ![screenshot](documentation/bug#9.png)
+
+   - Whilst using DevTools I checked the caching on my site. When I checked the 'disable cache' box and kept dev tools open I worked as normal.  
+
+- Home page arrow button does not work when clicked if user not logged in #9
+
+   ![screenshot](documentation/bug#9.png)
+
+   - Whilst using DevTools I checked the caching on my site. When I checked the 'disable cache' box and kept dev tools open I worked as normal.
+
+- Log in link on the sign up page redirects to the sign up page rather than the log in page #10
+
+   ![screenshot](documentation/bug#10.png)
+
+   - I corrected the url as the url_for included the sign up function rather than the log in function.
 
 ## Unfixed Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-Some examples:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
+- On devices smaller than 300px, the page starts to have `overflow-x` scrolling.
 
     ![screenshot](documentation/unfixed-bug01.png)
 
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
+    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read particularly on inputs and on the mobile sidebar.
 
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
+- When validating the jingja code using HTML validator it says there is a stray div.
 
     ![screenshot](documentation/unfixed-bug03.png)
 
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-There are no remaining bugs that I am aware of.
+    - Attempted fix: when attempted to fix it affects the for loop of events.
