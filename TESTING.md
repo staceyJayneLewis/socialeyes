@@ -178,28 +178,22 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a new site user, I would like to have a 'I'll be attending' button for which events I want to attend, so that I can easily sign up for the event. | ![screenshot](documentation/feature18.jpg) |
+| As a new site user, I would like to be able to register for my own account so that I can sign up for events without having to fill in a form each time, as it will already have my details stored. | ![screenshot](documentation/google-pixel7-signup.png) |
+| As a new site user, I would like to simply view a list of different events so that I can decide which I prefer. | ![screenshot](documentation/feature6.jpg) |
+| As a new site user, I would like to add my own events so that I can advertise any help needed for charities. | ![screenshot](documentation/feature14.jpg) |
+| As a new site user, I would like to have simple access to the site's social media pages, so I can contact them or provide feedback if needed. | ![screenshot](documentation/feature7.jpg) |
+| As a returning site user, I would like to edit my event I created, so that I can update any details of my event. | ![screenshot](documentation/feature13.jpg) |
+| As a returning site user, I would like to have the option to delete my event, so that I can delete my event if necessary and remove the data from the database. | ![screenshot](documentation/feature15.jpg) |
+| As a returning site user, I would like to have the option to 'unattend' events, so that I can unattend if i can no longer go to that event. | ![screenshot](documentation/feature19.jpg) |
+| As a returning site user, I would like to be able to log in, so that I can view any events I will be attending. | ![screenshot](documentation/google-pixel7-login.png) |
+| As a returning site user, I would like to be able to log out, so that I am no longer kept signed in when I leave the site. | ![screenshot](documentation/feature17.jpg) |
+| As a site administrator, I should be able to edit events, so that I can update any details of events if needed. | ![screenshot](documentation/feature13.jpg) |
+| As a site administrator, I should be able to delete events, so that I can delete events if the events are postponed or cancelled. | ![screenshot](documentation/feature15.jpg) |
+| As a site administrator, I should be able to have my own profile, so that I can see my own events created. | ![screenshot](documentation/google-pixel7-profile.png) |
+| As a site administrator, I should be able to add as many events as needed, so that I do not have any limits. | ![screenshot](documentation/feature12.jpg) |
 
 ## Bugs
 
