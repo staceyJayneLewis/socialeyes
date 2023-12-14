@@ -213,19 +213,31 @@ Add/Edit Event
 
 - **log out modal**
 
-    - The log out feature is a responsive confirmation pop up which allows users to confirm their logging out in case they accidentally clicked the log out button to avoid the inconvenience of users having to log back in each time unnecessarily. Again, the modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour similar to the delete event. 
+    - The log out feature is a responsive confirmation pop up which allows users to confirm their logging out in case they accidentally clicked the log out button to avoid the inconvenience of users having to log back in each time unnecessarily. Again, the modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour similar to the delete event.
 
-![screenshot](documentation/feature17.jpg)
+- **Attend/unattend button**
+
+![screenshot](documentation/feature18.jpg)
+![screenshot](documentation/feature19.jpg)
+
+    - I have a button on each card which will display the option to attend event and sign up instantly with their details on their profile. If user is already signed in they will alternativley have the option on the button to unattend the event instead.
+
+- **Signed up alert**
+
+![screenshot](documentation/feature20.jpg)
+![screenshot](documentation/feature21.jpg)
+
+    - If user uses the attend/unattend button as seen above then they will receive a flash message which notifies the user that they have successful signed up or unattended the event. This feature is valuable to allow the user to know if it has worked successfully aswell as changing the button to display the option to unattend if needed.
 
 
 ### Future Features
 
 - Location filter #1
     - Users are shown events based on their location.
-- Add 'Attending' button #2
-    - Users are able to 'Attending' events they are interested in attending to show the event creator they are interested, but also to add to the users profile as a reminder.
+- Add events user is attending to profile #2
+    - Once users click that they are interested in attending a particular event it get's added to the users profile page under a 'Events Attending' page.
 - Filter upcoming events by date #3
-    - The ability to filter events by the closest dates on the upcoming events panel
+    - The ability to filter events by the closest dates on the upcoming events panel.
 - Attendee counter #4
     - Display how many people have said they are attending based on how many users have clicked 'attending'.
 - Search filter
