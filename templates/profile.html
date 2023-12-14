@@ -38,14 +38,14 @@
             <a href="{{ url_for('delete_event', event_id=event._id) }}" class="modal-close waves-effect btn green">Yes</a>
           </div>
         </div>
-        {% endif %}
       </div>
     </div>
   </div>
+  {% endif %}
   {% endfor %}
-  <div id="back-to-top" class="center-align">
-    <p class="text-center"><a href="#" class="page-tab" aria-label="link to top of the page">Back to the top<i
-          class="fa-solid fa-arrow-turn-up fa-md"></i></a></p>
-  </div>
+</div>
+<div id="back-to-top" class="center-align">
+  <p class="text-center"><a href="#" class="page-tab" aria-label="link to top of the page">Back to the top<i
+        class="fa-solid fa-arrow-turn-up fa-md"></i></a></p>
 </div>
 {% endblock %}
