@@ -15,8 +15,8 @@ nav ul li :hover {
 
 .nav__link--active,
 .nav__link--active a {
-  background-color: #17268A;
-  color:white!important;
+    background-color: #17268A;
+    color: white !important;
 }
 
 .nav-wrapper {
@@ -113,12 +113,12 @@ h4 {
 
 }
 
-.page-tab{
-    color:#000000;
+.page-tab {
+    color: #000000;
 }
 
-.page-tab:hover{
-    color:#17268A;
+.page-tab:hover {
+    color: #17268A;
 }
 
 @keyframes myAnim {
@@ -270,7 +270,7 @@ label {
 
     #hero-heading>p {
         font-size: 18px;
-        padding-left:2rem;
+        padding-left: 2rem;
         padding-right: 2rem;
     }
 
@@ -282,11 +282,12 @@ label {
 
 /* large screens */
 @media only screen and (min-width: 992px) {
+
     .nav__link--active,
     .nav__link--active a {
-    background-color:#ffffff;
-    color:#000000!important;
-    font-weight:500;
+        background-color: #ffffff;
+        color: #000000 !important;
+        font-weight: 500;
     }
 
     #hero-heading {
@@ -306,14 +307,14 @@ label {
         margin-top: 3%;
     }
 
-    .page-content{
+    .page-content {
         top: 30%;
         left: 35%;
         -ms-transform: translateX(-20%);
         transform: translateX(-20%);
     }
 
-    .events-content{
-        top:20%;
+    .events-content {
+        top: 20%;
     }
 }
