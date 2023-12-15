@@ -13,10 +13,10 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsocialeyes-1884ceb59a89.herokuapp.com%2Fhome) | ![screenshot](documentation/html_home.jpg) | No errors to show |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsocialeyes-1884ceb59a89.herokuapp.com%2Flogin) | ![screenshot](documentation/html_login.jpg) | No errors |
 | Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsocialeyes-1884ceb59a89.herokuapp.com%2Fsign_up) | ![screenshot](documentation/html_sign_up.jpg) | No Errors |
-| Profile | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_profile.jpg) | No Errors |
-| Events | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_events.jpg) | No Errors |
-| Add Event | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_add_event.jpg) | No Errors |
-| Edit Event | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html_edit.jpg) | No Errors |
+| Profile | W3C | ![screenshot](documentation/html_profile.jpg) | No Errors |
+| Events | W3C | ![screenshot](documentation/html_events.jpg) | No Errors |
+| Add Event | W3C | ![screenshot](documentation/html_add_event.jpg) | No Errors |
+| Edit Event | W3C | ![screenshot](documentation/html_edit.jpg) | No Errors |
 
 ### CSS
 
