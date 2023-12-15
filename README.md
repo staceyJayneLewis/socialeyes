@@ -110,7 +110,7 @@ Add/Edit Event
 
 - **Navbar**
 
-    - The navbar background colour has been blended into the colour of the callout background for the website design, so it becomes part of the design of the page. For easier navigation and readability for the user, the navbar is responsive and has a collapsable white side navbar for smaller devices up to tablet size devices. The navbar feature is essential for users to navigate through each page of the site, and it is a feature the users will always depend on to achieve what they want to do or see on the site. 
+    - The navbar background colour has been blended into the colour of the callout background for the website design, so it becomes part of the design of the page. For easier navigation and readability for the user, the navbar is responsive and has a collapsable white side navbar for smaller devices up to tablet size devices. The navbar feature is essential for users to navigate through each page of the site, and it is a feature the users will always depend on to achieve what they want to do or see on the site which is why I have made the navbar 'sticky'. The sticky styling means it will always be on display at the top of the page on all devices to make sure users have quick access to the navbar for ease of use rather than having to scroll all the way back up the top of the page to change to a different page.
 
 ![screenshot](documentation/feature1.jpg)
 ![screenshot](documentation/feature1-mobile.jpg)
@@ -158,7 +158,7 @@ The value a good designed site can bring is a good impression and returning cust
 - **Login/Sign up Header/Events**
 
 - I have sectioned the page headers with the same pink shade that I used on the callout page so that the website design is easily learnable, so the user feels familiar and confident with the website layout on each page throughout. The headers are all the same size and placement, so the users also knows instantly where to look for the short description which explains each page. 
-For the events page header I have added a 'Go to my events' button for easier access to the profile to see their own events they have created and have included a hover effect on the button to again keep to the conventions so users clearly know it is a clickable button. 
+For the events page header I have added a 'Go to my events' button for easier access to the profile to see their own events they have created and have included a hover effect on the button to again keep to the conventions so users clearly know it is a clickable button.
 
 ![screenshot](documentation/feature8.jpg)
 
@@ -166,6 +166,7 @@ For the events page header I have added a 'Go to my events' button for easier ac
 
 - The log in and sign up features are the most important features as without them the user cannot do anything other than see the upcoming events, so the forms are responsive for all size devices and has followed a simple layout design to not make the form look overcrowded. 
 The log in form has 2 inputs for a username and password whereas the sign up form additionally includes a confirm password input and both have a large log in/sign up button to log in or sign up the user once entered their details. I have included the materialise animation on the text inputs, so the text is large but when the input is clicked the text shrinks so the user has space to type their details. The animation is useful if the user needs a reminder of which input field it is unlike a placeholder where the button is clicked it disappears. I have also used the common icons you would see on many sites for username and password fields so this is also something the users will be familiar with. Both forms include form validation for each input, including checking if the password and confirm passwords match by including my own validation code for that.
+Again, for convenience of the user for a better experience I have added a session cookie so whenever a user logs in the information stored and remembered on the browser until the user logs out. 
 
 ![screenshot](documentation/feature9&10.jpg)
 

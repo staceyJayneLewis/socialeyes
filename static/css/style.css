@@ -13,6 +13,12 @@ nav ul li :hover {
     background-color: #ffffff !important;
 }
 
+.nav__link--active,
+.nav__link--active a {
+  background-color: #17268A;
+  color:white!important;
+}
+
 .nav-wrapper {
     background-color: #ffdfdb;
 }
@@ -276,6 +282,13 @@ label {
 
 /* large screens */
 @media only screen and (min-width: 992px) {
+    .nav__link--active,
+    .nav__link--active a {
+    background-color:#ffffff;
+    color:#000000!important;
+    font-weight:500;
+    }
+
     #hero-heading {
         width: 70%;
         top: 10%;
