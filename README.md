@@ -117,69 +117,68 @@ Add/Edit Event
 
 - **Logo**
 
-    - The logo sits within the navbar and, following standard website conventions, the logo is another way the user can 'click' their way back to the homepage for even simpler use of the site or app. The logo was designed by myself to represent the eyes in the word Socialeyes by using "" speech marks to symbolise the concept of socialising and communication between one another. I have used a fixed navbar to make sure the user always has access to the navbar so they don't need to scroll all the way back up to the top of the page to access the navbar. 
-     I've used the shade of blue that's used within the hero image so the brand flows nicely into the design of the site. 
-    A logo increases brand awareness and recognition as the brand grows, and people may even make a judgement on the app/site based on how the logo makes them feel, which is one of the main values of the branding. 
+- The logo sits within the navbar and, following standard website conventions, the logo is another way the user can 'click' their way back to the homepage for even simpler use of the site or app. The logo was designed by myself to represent the eyes in the word Socialeyes by using "" speech marks to symbolise the concept of socialising and communication between one another. I have used a fixed navbar to make sure the user always has access to the navbar so they don't need to scroll all the way back up to the top of the page to access the navbar. 
+I've used the shade of blue that's used within the hero image so the brand flows nicely into the design of the site. 
+A logo increases brand awareness and recognition as the brand grows, and people may even make a judgement on the app/site based on how the logo makes them feel, which is one of the main values of the branding. 
 
 ![screenshot](documentation/feature2.jpg)
 
 - **Callout header**
 
-    - The callout header includes a header with the company slogan to capture the audiences' attention, along with a short description of the company's philosophy. If the user is not logged in, it will also include log in or sign up buttons to make it easier for users to find what they want to do without having to look far. 
+- The callout header includes a header with the company slogan to capture the audiences' attention, along with a short description of the company's philosophy. If the user is not logged in, it will also include log in or sign up buttons to make it easier for users to find what they want to do without having to look far. 
 
 ![screenshot](documentation/feature3.jpg)
 
 - **Arrow Button**
 
-    - An animated arrow displays on the home page to show users that you can scroll down to view more, or click the arrow so it automatically jumps to the next section of the page. The use of animation clearly shows users that it is clickable.
+- An animated arrow displays on the home page to show users that you can scroll down to view more, or click the arrow so it automatically jumps to the next section of the page. The use of animation clearly shows users that it is clickable.
 
 ![screenshot](documentation/feature4.jpg)
 
 - **Hero Image**
 
-    - The hero image is for aesthetic to make the website look visually appealing, but to also demonstrate visually the purpose of the website at first glance. The hero image is a colourful illustration of people communicating amongst one another and each person looks visually different, which as I mentioned previous in the colour scheme section that the colours work well together even though they are all completely different colours, and it is a good way to symbolise the objective of the app.
-    The value a good designed site can bring is a good impression and returning customers due to its memorable design, and so the effective use of colour and imagery is important for first impressions.
+- The hero image is for aesthetic to make the website look visually appealing, but to also demonstrate visually the purpose of the website at first glance. The hero image is a colourful illustration of people communicating amongst one another and each person looks visually different, which as I mentioned previous in the colour scheme section that the colours work well together even though they are all completely different colours, and it is a good way to symbolise the objective of the app.
+The value a good designed site can bring is a good impression and returning customers due to its memorable design, and so the effective use of colour and imagery is important for first impressions.
 
 ![screenshot](documentation/feature5.jpg)
 
 - **Cards**
 
-    - Simple cards designs are used to display the events of the upcoming events or the homepage, events page and profile page. Each card has details of the event name, description, location, date and time with an 'I'll be attending' button on each event for users to sign up to the event. If the users create their own event they instead will be shown the edit or delete button as it is their own event, they do not need to be shown the option to attend.
+- Simple cards designs are used to display the events of the upcoming events or the homepage, events page and profile page. Each card has details of the event name, description, location, date and time with an 'I'll be attending' button on each event for users to sign up to the event. If the users create their own event they instead will be shown the edit or delete button as it is their own event, they do not need to be shown the option to attend.
 
 ![screenshot](documentation/feature6.jpg)
 
 - **Footer**
 
-    - The footer holds the links to social media pages, which can increase following on social media or direct users to contact information if they have any queries or feedback. As common conventions, I used the social media symbols through font awesome to represent each social media brand as many are familiar with the icons. Each social media icon is black with the blue colour used throughout the site to highlight the icon on hover affect so that they stand out against the background colour of the footer which is the same colour as the hero image and navbar so it works with the flow of the design. 
+- The footer holds the links to social media pages, which can increase following on social media or direct users to contact information if they have any queries or feedback. As common conventions, I used the social media symbols through font awesome to represent each social media brand as many are familiar with the icons. Each social media icon is black with the blue colour used throughout the site to highlight the icon on hover affect so that they stand out against the background colour of the footer which is the same colour as the hero image and navbar so it works with the flow of the design. 
 
 ![screenshot](documentation/feature7.jpg)
 
 
 - **Login/Sign up Header/Events**
 
-    - I have sectioned the page headers with the same pink shade that I used on the callout page so that the website design is easily learnable, so the user feels familiar and confident with the website layout on each page throughout. The headers are all the same size and placement, so the users also knows instantly where to look for the short description which explains each page. 
-    For the events page header I have added a 'Go to my events' button for easier access to the profile to see their own events they have created 
-    and have included a hover effect on the button to again keep to the conventions so users clearly know it is a clickable button. 
+- I have sectioned the page headers with the same pink shade that I used on the callout page so that the website design is easily learnable, so the user feels familiar and confident with the website layout on each page throughout. The headers are all the same size and placement, so the users also knows instantly where to look for the short description which explains each page. 
+For the events page header I have added a 'Go to my events' button for easier access to the profile to see their own events they have created and have included a hover effect on the button to again keep to the conventions so users clearly know it is a clickable button. 
 
 ![screenshot](documentation/feature8.jpg)
 
 - **Login & Sign up form**
 
-    - The log in and sign up features are the most important features as without them the user cannot do anything other than see the upcoming events, so the forms are responsive for all size devices and has followed a simple layout design to not make the form look overcrowded. 
-    The log in form has 2 inputs for a username and password whereas the sign up form additionally includes a confirm password input and both     have  a large log in/sign up button to log in or sign up the user once entered their details. I have included the materialise animation on the text inputs, so the text is large but when the input is clicked the text shrinks so the user has space to type their details. The animation is useful if the user needs a reminder of which input field it is unlike a placeholder where the button is clicked it disappears. I have also used the common icons you would see on many sites for username and password fields so this is also something the users will be familiar with. Both forms include form validation for each input, including checking if the password and confirm passwords match by including my own validation code for that.
+- The log in and sign up features are the most important features as without them the user cannot do anything other than see the upcoming events, so the forms are responsive for all size devices and has followed a simple layout design to not make the form look overcrowded. 
+The log in form has 2 inputs for a username and password whereas the sign up form additionally includes a confirm password input and both have a large log in/sign up button to log in or sign up the user once entered their details. I have included the materialise animation on the text inputs, so the text is large but when the input is clicked the text shrinks so the user has space to type their details. The animation is useful if the user needs a reminder of which input field it is unlike a placeholder where the button is clicked it disappears. I have also used the common icons you would see on many sites for username and password fields so this is also something the users will be familiar with. Both forms include form validation for each input, including checking if the password and confirm passwords match by including my own validation code for that.
 
 ![screenshot](documentation/feature9&10.jpg)
 
 - **Login/Sign up link**
 
-    - The login and sign up form each also include a link underneath the form which will easily guide them to the correct page if they are on the wrong form for their convenience, for example if they are already registered but are on the sign-up form or if they are on the login form but need to register.
-    The link will bring more ease to the customer journey when using the site and will make sure they are provided with as much support as possible to make it a quick but smooth experience. Providing a smooth experience is integral to avoid the user feeling confused or frustrated and leaving the site.
+- The login and sign up form each also include a link underneath the form which will easily guide them to the correct page if they are on the wrong form for their convenience, for example if they are already registered but are on the sign-up form or if they are on the login form but need to register.
+The link will bring more ease to the customer journey when using the site and will make sure they are provided with as much support as possible to make it a quick but smooth experience. Providing a smooth experience is integral to avoid the user feeling confused or frustrated and leaving the site.
 
 ![screenshot](documentation/feature11.jpg)
 
 - **Profile Card**
 
-    - The profile includes a profile card which includes the users' username, a placeholder for a picture and also an add events button which is a quick shortcut for users to add their own event if they need to. The icon used is from font awesome to represent an image, so the users feels like they have their own space on their profile that includes all of their own events created.
+- The profile includes a profile card which includes the users' username, a placeholder for a picture and also an add events button which is a quick shortcut for users to add their own event if they need to. The icon used is from font awesome to represent an image, so the users feels like they have their own space on their profile that includes all of their own events created.
 
 ![screenshot](documentation/feature12.jpg)
 
@@ -191,43 +190,42 @@ Add/Edit Event
 
 - **Add Event**
 
-    - Add event is the same style form as the other forms on the site so that the user becomes familiar with the structure and layout of the forms and again, the form is also responsive so it can be used well on all different sized devices. The event inputs include event name, event description, time, date and location followed by the add button on the bottom of the form to simply add the event. In case of the user changing their mind, I have also included a cancel button should they need to return to the page if they decide not to add an event to make sure that they don't need to use the back button on the browsers site. 
-    I have added a date and time picker to the form so that everyone uses the same format of date and time so it's easier for the users but also   
-    easier for working with the database when using the CRUD functionality.  
+- Add event is the same style form as the other forms on the site so that the user becomes familiar with the structure and layout of the forms and again, the form is also responsive so it can be used well on all different sized devices. The event inputs include event name, event description, time, date and location followed by the add button on the bottom of the form to simply add the event. In case of the user changing their mind, I have also included a cancel button should they need to return to the page if they decide not to add an event to make sure that they don't need to use the back button on the browsers site. 
+I have added a date and time picker to the form so that everyone uses the same format of date and time so it's easier for the users but also easier for working with the database when using the CRUD functionality.  
 
 ![screenshot](documentation/feature14.jpg)
 
 - **Delete Event**
 
-    - The confirm delete feature is a responsive confirmation pop up which allows admin to have the safety of an extra step to avoid unwanted deletion of events. The modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour. If the user selects 'No' then they will return to the page they were on, however if they click yes the users will be signed out of the session and will have to log back in to return to their profile and events page.
+- The confirm delete feature is a responsive confirmation pop up which allows admin to have the safety of an extra step to avoid unwanted deletion of events. The modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour. If the user selects 'No' then they will return to the page they were on, however if they click yes the users will be signed out of the session and will have to log back in to return to their profile and events page.
 
 ![screenshot](documentation/feature15.jpg)
 
 
 - **Back to top arrow**
 
-    - The link is very useful for returning users to the top of the site page, especially for mobile users as if there are many results displayed users would have to scroll all the way back up to the top of the page if they wanted to return to the start of the page. The value this adds will be keeping users on the site, as they will not get frustrated and leave if they have numerous results to scroll through to go back up the page.
+- The link is very useful for returning users to the top of the site page, especially for mobile users as if there are many results displayed users would have to scroll all the way back up to the top of the page if they wanted to return to the start of the page. The value this adds will be keeping users on the site, as they will not get frustrated and leave if they have numerous results to scroll through to go back up the page.
 
 ![screenshot](documentation/feature16.jpg)
 
 
 - **log out modal**
 
-    - The log out feature is a responsive confirmation pop up which allows users to confirm their logging out in case they accidentally clicked the log out button to avoid the inconvenience of users having to log back in each time unnecessarily. Again, the modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour similar to the delete event.
+- The log out feature is a responsive confirmation pop up which allows users to confirm their logging out in case they accidentally clicked the log out button to avoid the inconvenience of users having to log back in each time unnecessarily. Again, the modal keeps to the simple design throughout the website having an option of just 2 buttons 'Yes' and 'No' in the symbolic red and green colour similar to the delete event.
 
 - **Attend/unattend button**
 
 ![screenshot](documentation/feature18.jpg)
 ![screenshot](documentation/feature19.jpg)
 
-    - I have a button on each card which will display the option to attend event and sign up instantly with their details on their profile. If user is already signed in they will alternativley have the option on the button to unattend the event instead.
+I have a button on each card which will display the option to attend event and sign up instantly with their details on their profile. If user is already signed in they will alternativley have the option on the button to unattend the event instead.
 
 - **Signed up alert**
 
 ![screenshot](documentation/feature20.jpg)
 ![screenshot](documentation/feature21.jpg)
 
-    - If user uses the attend/unattend button as seen above then they will receive a flash message which notifies the user that they have successful signed up or unattended the event. This feature is valuable to allow the user to know if it has worked successfully aswell as changing the button to display the option to unattend if needed.
+- If user uses the attend/unattend button as seen above then they will receive a flash message which notifies the user that they have successful signed up or unattended the event. This feature is valuable to allow the user to know if it has worked successfully aswell as changing the button to display the option to unattend if needed.
 
 
 ### Future Features
