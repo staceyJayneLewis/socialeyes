@@ -80,76 +80,27 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Defensive programming was manually tested with the below user acceptance testing:
 
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
+ <!-- Users cannot brute-force a URL to navigate to a restricted page
 - Users cannot perform CRUD functionality while logged-out
 - User-A should not be able to manipulate data belonging to User-B, or vice versa
 - Non-Authenticated users should not be able to access pages that require authentication
 - Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Defensive programming was manually tested with the below user acceptance testing:
+- CRUD functionality for data manipulation on a database.
+- Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
+ button clicks, input box validation, navigation links, etc. -->
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| Add Event | | | | | |
+| | User should not be permitted to submit form | Tested the feature by clicking the add button to see if submits the form with empty inputs | The feature behaved as expected, 'add' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test1.jpg) |
+| Log in | | | | | |
+| | User should not be permitted to submit form | Tested the feature by clicking the log in button to see if submits the form with empty inputs | The feature behaved as expected, 'log in' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test2.jpg) |
+| Sign up | | | | | |
+| | User should not be permitted to submit form | Tested the feature by clicking the sign up button to see if submits the form with empty inputs | The feature behaved as expected, 'sign up' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test3.jpg) |
+| | Password must contain letters and numbers and atleast 5-30 characters | Tested the feature by inputting a password shorter than 5 characters and longer than 30 | The feature behaved as expected, prompt shown when password is too long or short | Test concluded and passed | ![screenshot](documentation/defensive-test4.jpg) |
+| | Password must match confirm password | Tested the feature by typing in a different password in the confirm password compared to the password field | Feature behaved as expected, flash message of 'passwords do not match, try again' shows on screen if confirm password and password are different | Test concluded and passed | ![screenshot](documentation/defensive-test5.jpg) |
 
 ## User Story Testing
 
