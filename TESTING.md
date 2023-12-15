@@ -82,25 +82,27 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Defensive programming was manually tested with the below user acceptance testing:
 
- <!-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-- CRUD functionality for data manipulation on a database.
-- Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
- button clicks, input box validation, navigation links, etc. -->
-
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Add Event | | | | | |
 | | User should not be permitted to submit form | Tested the feature by clicking the add button to see if submits the form with empty inputs | The feature behaved as expected, 'add' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test1.jpg) |
+| | A user/non-user should not be able to brute force to the add event page | The feature behaved as expected, I used the URL http://socialeyes-1884ceb59a89.herokuapp.com/add_events to test this whilst logged out. Flash message displayed 'You must log in to view this page' | Test concluded and passed | ![screenshot](documentation/defensive-test6.jpg) |
+| Edit Page | | | | | |
+| | A user/non-user should not be able to brute force to edit an event page | The feature behaved as expected, I used the URL http://socialeyes-1884ceb59a89.herokuapp.com/edit_event/654a0c28f29498fdf38f31c0 which is the macmillan event to test this whilst logged out. Flash message displayed 'You must log in to view this page' | Test concluded and passed | ![screenshot](documentation/defensive-test6.jpg) |
 | Log in | | | | | |
 | | User should not be permitted to submit form | Tested the feature by clicking the log in button to see if submits the form with empty inputs | The feature behaved as expected, 'log in' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test2.jpg) |
+| Log in | | | | | |
+| | User should not be able to log in with incorrect password | Tested the feature by clicking the log in button to see if submits the form with empty inputs | The feature behaved as expected, 'log in' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test7.jpg) |
 | Sign up | | | | | |
 | | User should not be permitted to submit form | Tested the feature by clicking the sign up button to see if submits the form with empty inputs | The feature behaved as expected, 'sign up' button clicked and prompt came up telling user to fill in event name field | Test concluded and passed | ![screenshot](documentation/defensive-test3.jpg) |
 | | Password must contain letters and numbers and atleast 5-30 characters | Tested the feature by inputting a password shorter than 5 characters and longer than 30 | The feature behaved as expected, prompt shown when password is too long or short | Test concluded and passed | ![screenshot](documentation/defensive-test4.jpg) |
 | | Password must match confirm password | Tested the feature by typing in a different password in the confirm password compared to the password field | Feature behaved as expected, flash message of 'passwords do not match, try again' shows on screen if confirm password and password are different | Test concluded and passed | ![screenshot](documentation/defensive-test5.jpg) |
+| Profile | | | | | |
+| | A user/non-user should not be able to brute force to a different users profile page | The feature behaved as expected, I used the URL http://socialeyes-1884ceb59a89.herokuapp.com/profile/staceylewis to test this whilst logged out. Flash message displayed 'You must log in to view this page' | Test concluded and passed | ![screenshot](documentation/defensive-test6.jpg) |
+| | A should only be able to see their own created events on their profile page | The feature behaved as expected, I created a new userA and checked the profile page. As expected could not see any events as userA has not created any | Test concluded and passed | ![screenshot](documentation/defensive-test9.jpg) |
+| Events | | | | | |
+| | A user/non-user should not be able to brute force to the events page | The feature behaved as expected, I used the URL http://socialeyes-1884ceb59a89.herokuapp.com/get_events to test this whilst logged out. Flash message displayed 'You must log in to view this page' | Test concluded and passed | ![screenshot](documentation/defensive-test6.jpg) |
+| | A user/non-user should not be able to delete events whilst logged out | The feature behaved as expected, on events that are not created by the user in session the 'I'll be attending' button is displayed instead of 'edit' and 'delete' | Test concluded and passed | ![screenshot](documentation/defensive-test8.jpg) |
 
 ## User Story Testing
 
@@ -109,14 +111,14 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a new site user, I would like to have a 'I'll be attending' button for which events I want to attend, so that I can easily sign up for the event. | ![screenshot](documentation/feature18.jpg) |
 | As a new site user, I would like to be able to register for my own account so that I can sign up for events without having to fill in a form each time, as it will already have my details stored. | ![screenshot](documentation/google-pixel7-signup.png) |
 | As a new site user, I would like to simply view a list of different events so that I can decide which I prefer. | ![screenshot](documentation/feature6.jpg) |
-| As a new site user, I would like to add my own events so that I can advertise any help needed for charities. | ![screenshot](documentation/feature14.jpg) |
+| As a new site user, I would like to add my own events so that I can advertise any help needed for charities. | ![screenshot](documentation/feature14.jpg) ![screenshot](documentation/mongo-add.jpg) |
 | As a new site user, I would like to have simple access to the site's social media pages, so I can contact them or provide feedback if needed. | ![screenshot](documentation/feature7.jpg) |
 | As a returning site user, I would like to edit my event I created, so that I can update any details of my event. | ![screenshot](documentation/feature13.jpg) |
 | As a returning site user, I would like to have the option to delete my event, so that I can delete my event if necessary and remove the data from the database. | ![screenshot](documentation/feature15.jpg) |
 | As a returning site user, I would like to have the option to 'unattend' events, so that I can unattend if i can no longer go to that event. | ![screenshot](documentation/feature19.jpg) |
 | As a returning site user, I would like to be able to log in, so that I can view any events I will be attending. | ![screenshot](documentation/google-pixel7-login.png) |
 | As a returning site user, I would like to be able to log out, so that I am no longer kept signed in when I leave the site. | ![screenshot](documentation/feature17.jpg) |
-| As a site administrator, I should be able to edit events, so that I can update any details of events if needed. | ![screenshot](documentation/feature13.jpg) |
+| As a site administrator, I should be able to edit events, so that I can update any details of events if needed. | ![screenshot](documentation/feature13.jpg) ![screenshot](documentation/mongo-edit.jpg) |
 | As a site administrator, I should be able to delete events, so that I can delete events if the events are postponed or cancelled. | ![screenshot](documentation/feature15.jpg) |
 | As a site administrator, I should be able to have my own profile, so that I can see my own events created. | ![screenshot](documentation/google-pixel7-profile.png) |
 | As a site administrator, I should be able to add as many events as needed, so that I do not have any limits. | ![screenshot](documentation/feature12.jpg) |
